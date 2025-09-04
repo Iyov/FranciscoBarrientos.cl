@@ -7,7 +7,7 @@ Website: https://franciscobarrientos.cl/
 
 Innovative technological solutions and IT services to transform your business
 
-![FB Logo](img/FB_Logo[2]_250.png)
+![FB Logo](img/FB_Logo_[2]_250.png)
 
 ## Services
 
