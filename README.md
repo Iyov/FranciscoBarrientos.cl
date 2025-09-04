@@ -32,10 +32,15 @@ Creation and appreciation of memes as a form of humor and digital culture.
 Email: mailto:francisco.barrientos@usach.cl
 
 ### Websites:
-https://FranciscoBarrientos.cl
-https://RopavejeroRetro.cl
-https://DigDev.cl
+* https://FranciscoBarrientos.cl
+
+* https://RopavejeroRetro.cl
+
+* https://DigDev.cl
 
 ### Social Media
-LinkedIn: https://www.linkedin.com/in/digdevsolutions/
-GitHub: https://github.com/Iyov/
+* LinkedIn: https://www.linkedin.com/in/digdevsolutions/
+
+* GitHub: https://github.com/Iyov/
+
+### Francisco Barrientos
