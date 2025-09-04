@@ -11,19 +11,19 @@
     <meta property="og:description" content="Francisco Barrientos - Software and Data Engineer" />
     <meta property="og:url" content="https://franciscobarrientos.cl" />
     <link rel="canonical" href="https://franciscobarrientos.cl" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="css/app.css?v20250901" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome_6.4.0_all.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/app.css" type="text/css" />
 </head>
 <body>
     <!-- Header & Navigation -->
     <header>
         <div class="container">
             <nav>
-                <a href="#" class="logo"><i class="fas fa-code"></i> FB</a>
+                <a href="index.html" class="logo"><i class="fas fa-code"></i> FB</a>
                 <ul class="nav-links">
-                    <li><a href="#services">Servicios</a></li>
-                    <li><a href="#hobbies">Hobbies</a></li>
-                    <li><a href="#contact">Contacto</a></li>
+                    <li><a href="#services" data-key="navServices">Servicios</a></li>
+                    <li><a href="#hobbies" data-key="navHobbies">Hobbies</a></li>
+                    <li><a href="#contact" data-key="navContact">Contacto</a></li>
                 </ul>
                 <div class="language-switcher">
                     <button class="language-btn active" data-lang="es">ES</button>
@@ -44,47 +44,47 @@
     <section class="hero">
         <div class="container">
             <h1>Francisco Barrientos</h1>
-            <h2 class="lang-es">Ingeniero de datos y Software</h2>
-            <h2 class="lang-en">Data and Software Engineer</h2>
-            <p class="lang-es">Soluciones tecnológicas innovadoras y servicios de TI para transformar tu negocio</p>
-            <p class="lang-en">Innovative technological solutions and IT services to transform your business</p>
-            <a href="#contact" class="cta-button lang-es">Contáctame</a>
-            <a href="#contact" class="cta-button lang-en">Contact Me</a>
+            <h2 class="lang-es" data-key="heroTitle">Ingeniero de datos y Software</h2>
+            <h2 class="lang-en" data-key="heroTitleEn">Data and Software Engineer</h2>
+            <p class="lang-es" data-key="heroSubtitle">Soluciones tecnológicas innovadoras y servicios de TI para transformar tu negocio</p>
+            <p class="lang-en" data-key="heroSubtitleEn">Innovative technological solutions and IT services to transform your business</p>
+            <a href="#contact" class="cta-button lang-es" data-key="heroButton">Contáctame</a>
+            <a href="#contact" class="cta-button lang-en" data-key="heroButtonEn">Contact Me</a>
         </div>
     </section>
 
     <!-- Services Section -->
     <section class="services" id="services">
         <div class="container">
-            <h2 class="section-title lang-es">Servicios</h2>
-            <h2 class="section-title lang-en">Services</h2>
+            <h2 class="section-title lang-es" data-key="servicesTitle">Servicios</h2>
+            <h2 class="section-title lang-en" data-key="servicesTitleEn">Services</h2>
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-code software-dev"></i>
                     </div>
-                    <h3 class="lang-es">Desarrollo de Software</h3>
-                    <h3 class="lang-en">Software Development</h3>
-                    <p class="lang-es">Creación de aplicaciones y sistemas personalizados para satisfacer las necesidades específicas de tu empresa.</p>
-                    <p class="lang-en">Creation of custom applications and systems to meet your company's specific needs.</p>
+                    <h3 class="lang-es" data-key="service1Title">Desarrollo de Software</h3>
+                    <h3 class="lang-en" data-key="service1TitleEn">Software Development</h3>
+                    <p class="lang-es" data-key="service1Desc">Creación de aplicaciones y sistemas personalizados para satisfacer las necesidades específicas de tu empresa.</p>
+                    <p class="lang-en" data-key="service1DescEn">Creation of custom applications and systems to meet your company's specific needs.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-chart-line bi-analysis"></i>
                     </div>
-                    <h3 class="lang-es">Análisis BI</h3>
-                    <h3 class="lang-en">BI Analysis</h3>
-                    <p class="lang-es">Transformación de datos en insights accionables para la toma de decisiones empresariales inteligentes.</p>
-                    <p class="lang-en">Transforming data into actionable insights for smart business decision making.</p>
+                    <h3 class="lang-es" data-key="service2Title">Análisis BI</h3>
+                    <h3 class="lang-en" data-key="service2TitleEn">BI Analysis</h3>
+                    <p class="lang-es" data-key="service2Desc">Transformación de datos en insights accionables para la toma de decisiones empresariales inteligentes.</p>
+                    <p class="lang-en" data-key="service2DescEn">Transforming data into actionable insights for smart business decision making.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-server tech-content"></i>
                     </div>
-                    <h3 class="lang-es">Soluciones TI</h3>
-                    <h3 class="lang-en">IT Solutions</h3>
-                    <p class="lang-es">Servicios integrales de tecnología de la información para optimizar tu infraestructura tecnológica.</p>
-                    <p class="lang-en">Comprehensive information technology services to optimize your technological infrastructure.</p>
+                    <h3 class="lang-es" data-key="service3Title">Soluciones TI</h3>
+                    <h3 class="lang-en" data-key="service3TitleEn">IT Solutions</h3>
+                    <p class="lang-es" data-key="service3Desc">Servicios integrales de tecnología de la información para optimizar tu infraestructura tecnológica.</p>
+                    <p class="lang-en" data-key="service3DescEn">Comprehensive information technology services to optimize your technological infrastructure.</p>
                 </div>
             </div>
         </div>
@@ -93,33 +93,34 @@
     <!-- Hobbies Section -->
     <section class="hobbies" id="hobbies">
         <div class="container">
-            <h2 class="section-title lang-es">Hobbies</h2>
-            <h2 class="section-title lang-en">Hobbies</h2>
+            <h2 class="section-title lang-es" data-key="hobbiesTitle">Hobbies</h2>
+            <h2 class="section-title lang-en" data-key="hobbiesTitleEn">Hobbies</h2>
             <div class="hobbies-grid">
                 <div class="hobby-card">
                     <div class="hobby-img" style="background-image: url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1293&q=80');"></div>
                     <div class="hobby-content">
-                        <h3 class="lang-es">Fútbol</h3>
-                        <h3 class="lang-en">Soccer</h3>
-                        <p class="lang-es">Apasionado del fútbol, tanto viendo partidos como jugando con amigos los fines de semana.</p>
-                        <p class="lang-en">Passionate about soccer, both watching games and playing with friends on weekends.</p>
+                        <h3 class="lang-es" data-key="hobby1Title">Fútbol</h3>
+                        <h3 class="lang-en" data-key="hobby1TitleEn">Soccer</h3>
+                        <p class="lang-es" data-key="hobby1Desc">Apasionado del fútbol, tanto viendo partidos como jugando con amigos los fines de semana.</p>
+                        <p class="lang-en" data-key="hobby1DescEn">Passionate about soccer, both watching games and playing with friends on weekends.</p>
                     </div>
                 </div>
                 <div class="hobby-card">
                     <div class="hobby-img" style="background-image: url('https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1190&q=80');"></div>
                     <div class="hobby-content">
-                        <h3 class="lang-es">Básquetbol</h3>
-                        <h3 class="lang-en">Basketball</h3>
-                        <p class="lang-es">Disfruto del básquetbol por su dinamismo y trabajo en equipo.</p>
-                        <p class="lang-en">I enjoy basketball for its dynamism and teamwork.</p>
+                        <h3 class="lang-es" data-key="hobby2Title">Básquetbol</h3>
+                        <h3 class="lang-en" data-key="hobby2TitleEn">Basketball</h3>
+                        <p class="lang-es" data-key="hobby2Desc">Disfruto del básquetbol por su dinamismo y trabajo en equipo.</p>
+                        <p class="lang-en" data-key="hobby2DescEn">I enjoy basketball for its dynamism and teamwork.</p>
                     </div>
                 </div>
                 <div class="hobby-card">
                     <div class="hobby-img" style="background-image: url('https://images.unsplash.com/photo-1611262588024-d12430b98920?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80');"></div>
                     <div class="hobby-content">
-                        <h3>Memes</h3>
-                        <p class="lang-es">Creación y apreciación de memes como forma de humor y cultura digital.</p>
-                        <p class="lang-en">Creation and appreciation of memes as a form of humor and digital culture.</p>
+                        <h3 class="lang-es" data-key="hobby3Title">Memes</h3>
+                        <h3 class="lang-en" data-key="hobby3TitleEn">Memes</h3>
+                        <p class="lang-es" data-key="hobby3Desc">Creación y apreciación de memes como forma de humor y cultura digital.</p>
+                        <p class="lang-en" data-key="hobby3DescEn">Creation and appreciation of memes as a form of humor and digital culture.</p>
                     </div>
                 </div>
             </div>
@@ -129,8 +130,8 @@
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
-            <h2 class="section-title lang-es">Contáctame</h2>
-            <h2 class="section-title lang-en">Contact Me</h2>
+            <h2 class="section-title lang-es" data-key="contactTitle">Contáctame</h2>
+            <h2 class="section-title lang-en" data-key="contactTitleEn">Contact Me</h2>
             
             <div class="contact-grid">
                 <div class="contact-info">
@@ -138,8 +139,8 @@
                         <div class="contact-icon">
                             <i class="fas fa-envelope"></i>
                         </div>
-                        <h3 class="lang-es">Email</h3>
-                        <h3 class="lang-en">Email</h3>
+                        <h3 class="lang-es" data-key="contactEmailTitle">Email</h3>
+                        <h3 class="lang-en" data-key="contactEmailTitleEn">Email</h3>
                         <ul class="contact-details">
                             <li>
                                 <i class="fas fa-envelope"></i>
@@ -152,8 +153,8 @@
                         <div class="contact-icon">
                             <i class="fas fa-globe"></i>
                         </div>
-                        <h3 class="lang-es">Sitios Web</h3>
-                        <h3 class="lang-en">Websites</h3>
+                        <h3 class="lang-es" data-key="contactWebTitle">Sitios Web</h3>
+                        <h3 class="lang-en" data-key="contactWebTitleEn">Websites</h3>
                         <ul class="contact-details">
                             <li>
                                 <i class="fas fa-desktop"></i>
@@ -176,8 +177,8 @@
                         <div class="contact-icon">
                             <i class="fas fa-share-alt"></i>
                         </div>
-                        <h3 class="lang-es">Redes Sociales</h3>
-                        <h3 class="lang-en">Social Media</h3>
+                        <h3 class="lang-es" data-key="contactSocialTitle">Redes Sociales</h3>
+                        <h3 class="lang-en" data-key="contactSocialTitleEn">Social Media</h3>
                         
                         <div class="social-links">
                             <a href="https://www.linkedin.com/in/francisco-barrientos-c/" target="_blank" title="LinkedIn">
@@ -193,12 +194,12 @@
                         <div class="contact-icon">
                             <i class="fas fa-code"></i>
                         </div>
-                        <h3 class="lang-es">¿Tienes un proyecto?</h3>
-                        <h3 class="lang-en">Do you have a project?</h3>
-                        <p class="lang-es" style="margin-bottom: 15px;">¡Hablemos sobre cómo puedo ayudarte a hacerlo realidad!</p>
-                        <p class="lang-en" style="margin-bottom: 15px;">Let's talk about how I can help you make it happen!</p>
-                        <a href="https://wa.me/56987629765" class="cta-button lang-es" target="_blank">Enviar mensaje</a>
-                        <a href="https://wa.me/56987629765" class="cta-button lang-en" target="_blank">Send message</a>
+                        <h3 class="lang-es" data-key="contactProjectTitle">¿Tienes un proyecto?</h3>
+                        <h3 class="lang-en" data-key="contactProjectTitleEn">Do you have a project?</h3>
+                        <p class="lang-es" data-key="contactProjectDesc" style="margin-bottom: 15px;">¡Hablemos sobre cómo puedo ayudarte a hacerlo realidad!</p>
+                        <p class="lang-en" data-key="contactProjectDescEn" style="margin-bottom: 15px;">Let's talk about how I can help you make it happen!</p>
+                        <a href="mailto:francisco.barrientos@usach.cl" class="cta-button lang-es" data-key="contactButton">Enviar mensaje</a>
+                        <a href="mailto:francisco.barrientos@usach.cl" class="cta-button lang-en" data-key="contactButtonEn">Send message</a>
                     </div>
                 </div>
             </div>
@@ -215,8 +216,8 @@
                 <li><a href="https://github.com/Iyov/" target="_blank"><i class="fab fa-github"></i></a></li>
                 <li><a href="https://digdev.cl" target="_blank"><i class="fas fa-desktop"></i></a></li>
             </ul>
-            <p class="copyright lang-es">© 2025 Francisco Barrientos. Todos los derechos reservados.</p>
-            <p class="copyright lang-en">© 2025 Francisco Barrientos. All rights reserved.</p>
+            <p class="copyright lang-es" data-key="footerCopyright">© 2025 Francisco Barrientos. Todos los derechos reservados.</p>
+            <p class="copyright lang-en" data-key="footerCopyrightEn">© 2025 Francisco Barrientos. All rights reserved.</p>
         </div>
     </footer>
 
