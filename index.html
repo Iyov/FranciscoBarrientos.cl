@@ -1,21 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Francisco Barrientos - Software & Data Engineering</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Francisco Barrientos - Software and Data Engineer" />
-    <meta property="og:site_name" content="FranciscoBarrientos.cl" />
-    <meta property="og:title" content="FranciscoBarrientos.cl" />
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content="Francisco Barrientos - Software and Data Engineer" />
-    <meta property="og:url" content="https://franciscobarrientos.cl" />
-    <link rel="canonical" href="https://franciscobarrientos.cl" />
-    <link rel="icon" href="img/favicon.png" type="image/x-icon" />
+    <title>Francisco Barrientos - Ingeniero de Software y Datos | Desarrollo a Medida Chile</title>
+    <meta name="description" content="Ingeniero de software y datos en Chile. Desarrollo de software a medida, análisis BI, soluciones TI. Consultoría tecnológica para transformar tu negocio.">
+    <meta name="keywords" content="ingeniero de software, ingeniero de datos, desarrollo software Chile, análisis BI, soluciones TI, consultoría tecnológica, Francisco Barrientos">
+    <meta name="author" content="Francisco Barrientos">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <link rel="canonical" href="https://franciscobarrientos.cl">
+    <meta property="og:title" content="Francisco Barrientos - Ingeniero de Software y Datos">
+    <meta property="og:description" content="Desarrollo de software a medida, análisis BI y soluciones TI en Chile. Transforma tu negocio con tecnología.">
+    <meta property="og:url" content="https://franciscobarrientos.cl">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://franciscobarrientos.cl/images/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Francisco Barrientos - Ingeniero de Software y Datos">
+    <meta name="twitter:description" content="Desarrollo de software a medida, análisis BI y soluciones TI en Chile.">
+    <link rel="icon" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/favicon.png">
     <link rel="stylesheet" href="css/font-awesome_6.4.0_all.min.css" type="text/css" />
     <link rel="stylesheet" href="css/index.css" type="text/css" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Francisco Barrientos",
+      "jobTitle": "Ingeniero de Software y Datos",
+      "url": "https://franciscobarrientos.cl",
+      "sameAs": [
+        "https://www.linkedin.com/in/francisco-barrientos-c/",
+        "https://github.com/Iyov/",
+        "https://digdev.cl"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "DigDev"
+      }
+    }
+    </script>
 </head>
-<body>
+<body itemscope itemtype="https://schema.org/WebPage">
     <!-- Progress Bar -->
     <div class="progress-container">
         <div class="progress-bar" id="progressBar"></div>
@@ -24,6 +50,7 @@
     <!-- Back to Top Button -->
     <div class="back-to-top" id="backToTop">
         <i class="fas fa-arrow-up"></i>
+        <span class="sr-only">Volver arriba</span>
     </div>
 
     <!-- Header & Navigation -->
@@ -31,7 +58,7 @@
         <div class="container">
             <nav>
                 <div class="logo" id="logo">
-                    <i class="fas fa-code"></i> FB
+                    <i class="fas fa-code" aria-hidden="true"></i> <span itemprop="name">FB</span>
                 </div>
                 <ul class="nav-links">
                     <li><a href="#services" data-key="navServices">Servicios</a></li>
@@ -45,10 +72,12 @@
                     <button class="language-btn" data-lang="en">EN</button>
                     <button class="theme-toggle" id="themeToggle">
                         <i class="fas fa-moon"></i>
+                        <span class="sr-only">Cambiar tema</span>
                     </button>
                 </div>
                 <button class="hamburger" id="hamburger">
                     <i class="fas fa-bars"></i>
+                    <span class="sr-only">Menú</span>
                 </button>
             </nav>
         </div>
@@ -57,7 +86,7 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1>Francisco Barrientos</h1>
+            <h1 itemprop="headline">Francisco Barrientos</h1>
             <h2 class="lang-es" data-key="heroSubtitle2">Ingeniero de datos y Software</h2>
             <h2 class="lang-en" data-key="heroSubtitle2En">Data and Software Engineer</h2>
             <p class="lang-es" data-key="heroSubtitle">Soluciones tecnológicas innovadoras y servicios de TI para transformar tu negocio</p>
@@ -69,23 +98,23 @@
     </section>
 
     <!-- Services Section -->
-    <section class="services" id="services">
+    <section id="services" class="services" itemscope itemtype="https://schema.org/Service">
         <div class="container">
             <h2 class="section-title lang-es" data-key="servicesTitle">Servicios</h2>
             <h2 class="section-title lang-en" data-key="servicesTitleEn">Services</h2>
             <div class="services-grid">
-                <div class="service-card">
+                <div class="service-card" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
                     <div class="service-icon">
-                        <i class="fas fa-code software-dev"></i>
+                        <i class="fas fa-code software-dev" aria-hidden="true"></i>
                     </div>
-                    <h3 class="lang-es" data-key="service1Title">Desarrollo de Software</h3>
+                    <h3 class="lang-es" data-key="service1Title" itemprop="name">Desarrollo de Software</h3>
                     <h3 class="lang-en" data-key="service1TitleEn">Software Development</h3>
-                    <p class="lang-es" data-key="service1Desc">Creación de aplicaciones y sistemas personalizados para satisfacer las necesidades específicas de tu empresa.</p>
+                    <p class="lang-es" data-key="service1Desc" itemprop="description">Creación de aplicaciones y sistemas personalizados para satisfacer las necesidades específicas de tu empresa.</p>
                     <p class="lang-en" data-key="service1DescEn">Creation of custom applications and systems to meet your company's specific needs.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-chart-line bi-analysis"></i>
+                        <i class="fas fa-chart-line bi-analysis" aria-hidden="true"></i>
                     </div>
                     <h3 class="lang-es" data-key="service2Title">Análisis BI</h3>
                     <h3 class="lang-en" data-key="service2TitleEn">BI Analysis</h3>
@@ -94,7 +123,7 @@
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-server tech-content"></i>
+                        <i class="fas fa-server tech-content" aria-hidden="true"></i>
                     </div>
                     <h3 class="lang-es" data-key="service3Title">Soluciones TI</h3>
                     <h3 class="lang-en" data-key="service3TitleEn">IT Solutions</h3>
@@ -106,13 +135,13 @@
     </section>
 
     <!-- Hobbies Section -->
-    <section class="hobbies" id="hobbies">
+    <section id="hobbies" class="hobbies">
         <div class="container">
             <h2 class="section-title lang-es" data-key="hobbiesTitle">Hobbies</h2>
             <h2 class="section-title lang-en" data-key="hobbiesTitleEn">Hobbies</h2>
             <div class="hobbies-grid">
                 <div class="hobby-card">
-                    <div class="hobby-img" style="background-image: url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1293&q=80');"></div>
+                    <div class="hobby-img" style="background-image: url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1293&q=80');" aria-label="Personas jugando fútbol"></div>
                     <div class="hobby-content">
                         <h3 class="lang-es" data-key="hobby1Title">Fútbol</h3>
                         <h3 class="lang-en" data-key="hobby1TitleEn">Soccer</h3>
@@ -121,7 +150,7 @@
                     </div>
                 </div>
                 <div class="hobby-card">
-                    <div class="hobby-img" style="background-image: url('https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1190&q=80');"></div>
+                    <div class="hobby-img" style="background-image: url('https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1190&q=80');" aria-label="Personas jugando básquetbol"></div>
                     <div class="hobby-content">
                         <h3 class="lang-es" data-key="hobby2Title">Básquetbol</h3>
                         <h3 class="lang-en" data-key="hobby2TitleEn">Basketball</h3>
@@ -130,7 +159,7 @@
                     </div>
                 </div>
                 <div class="hobby-card">
-                    <div class="hobby-img" style="background-image: url('https://images.unsplash.com/photo-1611262588024-d12430b98920?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80');"></div>
+                    <div class="hobby-img" style="background-image: url('https://images.unsplash.com/photo-1611262588024-d12430b98920?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80');" aria-label="Pantalla con memes"></div>
                     <div class="hobby-content">
                         <h3 class="lang-es" data-key="hobby3Title">Memes</h3>
                         <h3 class="lang-en" data-key="hobby3TitleEn">Memes</h3>
@@ -143,7 +172,7 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="faq" id="faq">
+    <section id="faq" class="faq">
         <div class="container">
             <h2 class="section-title lang-es" data-key="faqTitle">Preguntas Frecuentes</h2>
             <h2 class="section-title lang-en" data-key="faqTitleEn">Frequently Asked Questions</h2>
@@ -153,7 +182,7 @@
                     <div class="faq-question">
                         <span class="lang-es" data-key="faq1Question">¿Qué servicios de desarrollo de software ofrecen en Chile?</span>
                         <span class="lang-en" data-key="faq1QuestionEn">What software development services do you offer in Chile?</span>
-                        <i class="fas fa-chevron-down"></i>
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
                     </div>
                     <div class="faq-answer">
                         <p class="lang-es" data-key="faq1Answer">Ofrecemos desarrollo de software a medida, aplicaciones web y móviles, integración de sistemas, análisis BI y consultoría tecnológica. Trabajamos con diversas tecnologías según las necesidades de cada proyecto.</p>
@@ -165,7 +194,7 @@
                     <div class="faq-question">
                         <span class="lang-es" data-key="faq2Question">¿Cómo es el proceso de desarrollo de software en sus proyectos?</span>
                         <span class="lang-en" data-key="faq2QuestionEn">What is the software development process like in your projects?</span>
-                        <i class="fas fa-chevron-down"></i>
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
                     </div>
                     <div class="faq-answer">
                         <p class="lang-es" data-key="faq2Answer">Nuestro proceso sigue metodologías ágiles, comenzando con un análisis de requerimientos, diseño de arquitectura, desarrollo iterativo, pruebas rigurosas y despliegue. Mantenemos una comunicación constante con nuestros clientes durante todo el proceso.</p>
@@ -177,7 +206,7 @@
                     <div class="faq-question">
                         <span class="lang-es" data-key="faq3Question">¿Qué tecnologías utilizan para el análisis de datos e ingeniería de datos?</span>
                         <span class="lang-en" data-key="faq3QuestionEn">What technologies do you use for data analysis and data engineering?</span>
-                        <i class="fas fa-chevron-down"></i>
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
                     </div>
                     <div class="faq-answer">
                         <p class="lang-es" data-key="faq3Answer">Utilizamos un stack moderno que incluye Python, R, SQL, Apache Spark, TensorFlow, Power BI y Tableau. Seleccionamos las herramientas según los requisitos específicos de cada proyecto de análisis de datos.</p>
@@ -189,7 +218,7 @@
                     <div class="faq-question">
                         <span class="lang-es" data-key="faq4Question">¿Trabajan con empresas de todos los tamaños en Chile?</span>
                         <span class="lang-en" data-key="faq4QuestionEn">Do you work with companies of all sizes in Chile?</span>
-                        <i class="fas fa-chevron-down"></i>
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
                     </div>
                     <div class="faq-answer">
                         <p class="lang-es" data-key="faq4Answer">Sí, trabajamos con startups, pymes y grandes empresas. Adaptamos nuestras soluciones según el tamaño y necesidades de cada cliente, ofreciendo servicios escalables y personalizados.</p>
@@ -201,7 +230,7 @@
                     <div class="faq-question">
                         <span class="lang-es" data-key="faq5Question">¿Ofrecen soporte y mantenimiento después del desarrollo?</span>
                         <span class="lang-en" data-key="faq5QuestionEn">Do you offer support and maintenance after development?</span>
-                        <i class="fas fa-chevron-down"></i>
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
                     </div>
                     <div class="faq-answer">
                         <p class="lang-es" data-key="faq5Answer">Sí, ofrecemos planes de soporte post-implementación que incluyen mantenimiento, actualizaciones, monitorización y resolución de incidencias. Nuestro objetivo es asegurar el correcto funcionamiento continuo de las soluciones entregadas.</p>
@@ -213,7 +242,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="contact" id="contact">
+    <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title lang-es" data-key="contactTitle">Contáctame</h2>
             <h2 class="section-title lang-en" data-key="contactTitleEn">Contact Me</h2>
@@ -222,13 +251,13 @@
                 <div class="contact-info">
                     <div class="contact-card">
                         <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
                         </div>
                         <h3 class="lang-es" data-key="contactEmailTitle">Email</h3>
                         <h3 class="lang-en" data-key="contactEmailTitleEn">Email</h3>
                         <ul class="contact-details">
                             <li>
-                                <i class="fas fa-envelope"></i>
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
                                 <a href="mailto:francisco.barrientos@usach.cl">francisco.barrientos@usach.cl</a>
                             </li>
                         </ul>
@@ -236,26 +265,26 @@
                     
                     <div class="contact-card">
                         <div class="contact-icon">
-                            <i class="fas fa-globe"></i>
+                            <i class="fas fa-globe" aria-hidden="true"></i>
                         </div>
                         <h3 class="lang-es" data-key="contactWebTitle">Sitios Web</h3>
                         <h3 class="lang-en" data-key="contactWebTitleEn">Websites</h3>
                         <ul class="contact-details">
                             <li>
-                                <i class="fas fa-desktop"></i>
-                                <a href="https://digdev.cl/" target="_blank">DigDev.cl</a>
+                                <i class="fas fa-desktop" aria-hidden="true"></i>
+                                <a href="https://digdev.cl/" target="_blank" rel="noopener noreferrer">DigDev.cl</a>
                             </li>
                             <li>
-                                <i class="fas fa-desktop"></i>
-                                <a href="https://ropavejeroretro.cl/" target="_blank">RopavejeroRetro.cl</a>
+                                <i class="fas fa-desktop" aria-hidden="true"></i>
+                                <a href="https://ropavejeroretro.cl/" target="_blank" rel="noopener noreferrer">RopavejeroRetro.cl</a>
                             </li>
                             <li>
-                                <i class="fas fa-desktop"></i>
-                                <a href="https://ivettegonzalez.cl/" target="_blank">IvetteGonzalez.cl</a>
+                                <i class="fas fa-desktop" aria-hidden="true"></i>
+                                <a href="https://ivettegonzalez.cl/" target="_blank" rel="noopener noreferrer">IvetteGonzalez.cl</a>
                             </li>
                             <li>
-                                <i class="fas fa-desktop"></i>
-                                <a href="https://franciscobarrientos.cl/" target="_blank">FranciscoBarrientos.cl</a>
+                                <i class="fas fa-desktop" aria-hidden="true"></i>
+                                <a href="https://franciscobarrientos.cl/" target="_blank" rel="noopener noreferrer">FranciscoBarrientos.cl</a>
                             </li>
                         </ul>
                     </div>
@@ -264,24 +293,26 @@
                 <div class="contact-info">
                     <div class="contact-card">
                         <div class="contact-icon">
-                            <i class="fas fa-share-alt"></i>
+                            <i class="fas fa-share-alt" aria-hidden="true"></i>
                         </div>
                         <h3 class="lang-es" data-key="contactSocialTitle">Redes Sociales</h3>
                         <h3 class="lang-en" data-key="contactSocialTitleEn">Social Media</h3>
                         
                         <div class="social-links">
-                            <a href="https://www.linkedin.com/in/francisco-barrientos-c/" target="_blank" title="LinkedIn">
-                                <i class="fab fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/francisco-barrientos-c/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                                <i class="fab fa-linkedin" aria-hidden="true"></i>
+                                <span class="sr-only">LinkedIn</span>
                             </a>
-                            <a href="https://github.com/Iyov/" target="_blank" title="GitHub">
-                                <i class="fab fa-github"></i>
+                            <a href="https://github.com/Iyov/" target="_blank" rel="noopener noreferrer" title="GitHub">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                                <span class="sr-only">GitHub</span>
                             </a>
                         </div>
                     </div>
                     
                     <div class="contact-card">
                         <div class="contact-icon">
-                            <i class="fas fa-code"></i>
+                            <i class="fas fa-code" aria-hidden="true"></i>
                         </div>
                         <h3 class="lang-es" data-key="contactProjectTitle">¿Tienes un proyecto?</h3>
                         <h3 class="lang-en" data-key="contactProjectTitleEn">Do you have a project?</h3>
@@ -301,27 +332,27 @@
             <ul class="footer-links">
                 <li>
                     <a href="mailto:francisco.barrientos@usach.cl">
-                        <i class="fas fa-envelope"></i> Email
+                        <i class="fas fa-envelope" aria-hidden="true"></i> Email
                     </a>
                 </li>
                 <li>
-                    <a href="https://wa.me/56987629765" target="_blank">
-                        <i class="fas fa-message"></i> WhatsApp
+                    <a href="https://wa.me/56987629765" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-message" aria-hidden="true"></i> WhatsApp
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/francisco-barrientos-c/" target="_blank">
-                        <i class="fab fa-linkedin"></i> LinkedIn
+                    <a href="https://www.linkedin.com/in/francisco-barrientos-c/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn
                     </a>
                 </li>
                 <li>
-                    <a href="https://github.com/Iyov/" target="_blank">
-                        <i class="fab fa-github"></i> GitHub
+                    <a href="https://github.com/Iyov/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github" aria-hidden="true"></i> GitHub
                     </a>
                 </li>
                 <li>
-                    <a href="https://digdev.cl" target="_blank">
-                        <i class="fas fa-desktop"></i> DigDev.cl
+                    <a href="https://digdev.cl" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-desktop" aria-hidden="true"></i> DigDev.cl
                     </a>
                 </li>
             </ul>
