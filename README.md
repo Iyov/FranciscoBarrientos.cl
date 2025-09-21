@@ -43,7 +43,7 @@ Email: mailto:francisco.barrientos@usach.cl
 * https://FranciscoBarrientos.cl
 
 ### Social Media
-* LinkedIn: https://www.linkedin.com/in/franciscobarrientosc/
+* LinkedIn: https://www.linkedin.com/in/francisco-barrientos-c/
 
 * GitHub: https://github.com/Iyov/
 
