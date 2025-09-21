@@ -7,7 +7,7 @@ Website: https://franciscobarrientos.cl/
 
 Innovative technological solutions and IT services to transform your business
 
-![FB Logo](img/FB_Logo_[2]_250.png)
+![Francisco Barrientos Logo](img/FB_Logo_[2]_250.png)
 
 ## Services
 
@@ -34,14 +34,16 @@ Creation and appreciation of memes as a form of humor and digital culture.
 Email: mailto:francisco.barrientos@usach.cl
 
 ### Websites:
-* https://FranciscoBarrientos.cl
+* https://DigDev.cl
+
+* https://IvetteGonzalez.cl/
 
 * https://RopavejeroRetro.cl
 
-* https://DigDev.cl
+* https://FranciscoBarrientos.cl
 
 ### Social Media
-* LinkedIn: https://www.linkedin.com/in/digdevsolutions/
+* LinkedIn: https://www.linkedin.com/in/franciscobarrientosc/
 
 * GitHub: https://github.com/Iyov/
 

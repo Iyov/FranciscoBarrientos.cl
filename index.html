@@ -13,17 +13,30 @@
     <link rel="canonical" href="https://franciscobarrientos.cl" />
     <link rel="icon" href="img/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/font-awesome_6.4.0_all.min.css" type="text/css" />
-    <link rel="stylesheet" href="css/app.css" type="text/css" />
+    <link rel="stylesheet" href="css/index.css" type="text/css" />
 </head>
 <body>
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
     <!-- Header & Navigation -->
     <header>
         <div class="container">
             <nav>
-                <a href="index.html" class="logo"><i class="fas fa-code"></i> FB</a>
+                <div class="logo" id="logo">
+                    <i class="fas fa-code"></i> FB
+                </div>
                 <ul class="nav-links">
                     <li><a href="#services" data-key="navServices">Servicios</a></li>
                     <li><a href="#hobbies" data-key="navHobbies">Hobbies</a></li>
+                    <li><a href="#faq" data-key="navFaq">FAQ</a></li>
                     <li><a href="#contact" data-key="navContact">Contacto</a></li>
                 </ul>
                 <div class="language-switcher">
@@ -129,6 +142,76 @@
         </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title lang-es" data-key="faqTitle">Preguntas Frecuentes</h2>
+            <h2 class="section-title lang-en" data-key="faqTitleEn">Frequently Asked Questions</h2>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="lang-es" data-key="faq1Question">¿Qué servicios de desarrollo de software ofrecen en Chile?</span>
+                        <span class="lang-en" data-key="faq1QuestionEn">What software development services do you offer in Chile?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="lang-es" data-key="faq1Answer">Ofrecemos desarrollo de software a medida, aplicaciones web y móviles, integración de sistemas, análisis BI y consultoría tecnológica. Trabajamos con diversas tecnologías según las necesidades de cada proyecto.</p>
+                        <p class="lang-en" data-key="faq1AnswerEn">We offer custom software development, web and mobile applications, system integration, BI analysis, and technology consulting. We work with various technologies according to the needs of each project.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="lang-es" data-key="faq2Question">¿Cómo es el proceso de desarrollo de software en sus proyectos?</span>
+                        <span class="lang-en" data-key="faq2QuestionEn">What is the software development process like in your projects?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="lang-es" data-key="faq2Answer">Nuestro proceso sigue metodologías ágiles, comenzando con un análisis de requerimientos, diseño de arquitectura, desarrollo iterativo, pruebas rigurosas y despliegue. Mantenemos una comunicación constante con nuestros clientes durante todo el proceso.</p>
+                        <p class="lang-en" data-key="faq2AnswerEn">Our process follows agile methodologies, starting with requirements analysis, architecture design, iterative development, rigorous testing, and deployment. We maintain constant communication with our clients throughout the process.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="lang-es" data-key="faq3Question">¿Qué tecnologías utilizan para el análisis de datos e ingeniería de datos?</span>
+                        <span class="lang-en" data-key="faq3QuestionEn">What technologies do you use for data analysis and data engineering?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="lang-es" data-key="faq3Answer">Utilizamos un stack moderno que incluye Python, R, SQL, Apache Spark, TensorFlow, Power BI y Tableau. Seleccionamos las herramientas según los requisitos específicos de cada proyecto de análisis de datos.</p>
+                        <p class="lang-en" data-key="faq3AnswerEn">We use a modern stack that includes Python, R, SQL, Apache Spark, TensorFlow, Power BI, and Tableau. We select tools based on the specific requirements of each data analysis project.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="lang-es" data-key="faq4Question">¿Trabajan con empresas de todos los tamaños en Chile?</span>
+                        <span class="lang-en" data-key="faq4QuestionEn">Do you work with companies of all sizes in Chile?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="lang-es" data-key="faq4Answer">Sí, trabajamos con startups, pymes y grandes empresas. Adaptamos nuestras soluciones según el tamaño y necesidades de cada cliente, ofreciendo servicios escalables y personalizados.</p>
+                        <p class="lang-en" data-key="faq4AnswerEn">Yes, we work with startups, SMEs, and large companies. We adapt our solutions according to the size and needs of each client, offering scalable and personalized services.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="lang-es" data-key="faq5Question">¿Ofrecen soporte y mantenimiento después del desarrollo?</span>
+                        <span class="lang-en" data-key="faq5QuestionEn">Do you offer support and maintenance after development?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="lang-es" data-key="faq5Answer">Sí, ofrecemos planes de soporte post-implementación que incluyen mantenimiento, actualizaciones, monitorización y resolución de incidencias. Nuestro objetivo es asegurar el correcto funcionamiento continuo de las soluciones entregadas.</p>
+                        <p class="lang-en" data-key="faq5AnswerEn">Yes, we offer post-implementation support plans that include maintenance, updates, monitoring, and issue resolution. Our goal is to ensure the continued proper functioning of the delivered solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
@@ -160,7 +243,7 @@
                         <ul class="contact-details">
                             <li>
                                 <i class="fas fa-desktop"></i>
-                                <a href="https://franciscobarrientos.cl/" target="_blank">FranciscoBarrientos.cl</a>
+                                <a href="https://digdev.cl/" target="_blank">DigDev.cl</a>
                             </li>
                             <li>
                                 <i class="fas fa-desktop"></i>
@@ -168,7 +251,11 @@
                             </li>
                             <li>
                                 <i class="fas fa-desktop"></i>
-                                <a href="https://digdev.cl/" target="_blank">DigDev.cl</a>
+                                <a href="https://ivettegonzalez.cl/" target="_blank">IvetteGonzalez.cl</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-desktop"></i>
+                                <a href="https://franciscobarrientos.cl/" target="_blank">FranciscoBarrientos.cl</a>
                             </li>
                         </ul>
                     </div>
@@ -212,17 +299,37 @@
     <footer>
         <div class="container">
             <ul class="footer-links">
-                <li><a href="mailto:francisco.barrientos@usach.cl" target="_blank"><i class="fas fa-envelope"></i></a></li>
-                <li><a href="https://wa.me/56987629765" target="_blank"><i class="fas fa-message"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/francisco-barrientos-c/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="https://github.com/Iyov/" target="_blank"><i class="fab fa-github"></i></a></li>
-                <li><a href="https://digdev.cl" target="_blank"><i class="fas fa-desktop"></i></a></li>
+                <li>
+                    <a href="mailto:francisco.barrientos@usach.cl">
+                        <i class="fas fa-envelope"></i> Email
+                    </a>
+                </li>
+                <li>
+                    <a href="https://wa.me/56987629765" target="_blank">
+                        <i class="fas fa-message"></i> WhatsApp
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/francisco-barrientos-c/" target="_blank">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Iyov/" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </li>
+                <li>
+                    <a href="https://digdev.cl" target="_blank">
+                        <i class="fas fa-desktop"></i> DigDev.cl
+                    </a>
+                </li>
             </ul>
             <p class="copyright lang-es" data-key="footerCopyright">© 2025 Francisco Barrientos. Todos los derechos reservados.</p>
             <p class="copyright lang-en" data-key="footerCopyrightEn">© 2025 Francisco Barrientos. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="js/app.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
