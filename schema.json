@@ -1,0 +1,18 @@
+{
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Francisco Barrientos",
+    "jobTitle": "Ingeniero de Software y Datos | Data and Software Engineer",
+    "url": "https://franciscobarrientos.cl",
+    "logo": "https://franciscobarrientos.cl/img/FB_Logo_[2]_500.png",
+    "description": "Desarrollo de software a medida, análisis BI y soluciones TI en Chile. Transforma tu negocio con tecnología.",
+    "sameAs": [
+        "https://www.linkedin.com/in/francisco-barrientos-c/",
+        "https://github.com/Iyov/",
+        "https://digdev.cl"
+    ],
+    "worksFor": {
+        "@type": "Organization",
+        "name": "DigDev"
+    }
+}
