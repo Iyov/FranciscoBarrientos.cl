@@ -15,5 +15,11 @@
     "worksFor": {
         "@type": "Organization",
         "name": "DigDev"
-    }
+    },
+    "knowsAbout": [
+        "Desarrollo de Software",
+        "Análisis de Datos",
+        "Business Intelligence",
+        "Marketing Digital"
+    ]
 }

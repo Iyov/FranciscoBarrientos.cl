@@ -28,7 +28,8 @@
     <link rel="icon" href="img/favicon.png" />
     <link rel="apple-touch-icon" href="img/favicon.png" />
     <link rel="stylesheet" href="css/font-awesome_6.4.0_all.min.css" type="text/css" />
-    <link rel="stylesheet" href="css/ds.css" type="text/css" />
+    <link rel="stylesheet" href="css/old.css" type="text/css" />
+    
 </head>
 <body itemscope itemtype="https://schema.org/WebPage">
     <!-- Progress Bar -->
@@ -353,10 +354,30 @@
             <p class="copyright lang-en" data-key="footerCopyrightEn">© 2025 Francisco Barrientos. All rights reserved.</p>
         </div>
     </footer>
-
-    <!-- Schema.org structured data -->
-    <script type="application/ld+json" src="schema.json"></script>
     
-    <script src="js/ds.js"></script>
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Francisco Barrientos",
+    "jobTitle": "Ingeniero de Software y Datos | Data and Software Engineer",
+    "url": "https://franciscobarrientos.cl",
+    "logo": "https://franciscobarrientos.cl/img/FB_Logo_[2]_500.png",
+    "description": "Desarrollo de software a medida, análisis BI y soluciones TI en Chile. Transforma tu negocio con tecnología.",
+    "sameAs": [
+        "https://www.linkedin.com/in/francisco-barrientos-c/",
+        "https://github.com/Iyov/",
+        "https://wa.me/56987629765",
+        "https://digdev.cl"
+    ],
+    "worksFor": {
+        "@type": "Organization",
+        "name": "DigDev"
+    }
+}
+    </script>
+
+    <script src="js/old.js"></script>
 </body>
 </html>
