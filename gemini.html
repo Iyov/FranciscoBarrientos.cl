@@ -41,7 +41,7 @@
   <link rel="icon" type="image/x-icon" href="img/favicon.png" />
   <link rel="apple-touch-icon" href="img/favicon.png" />
   <link rel="stylesheet" href="css/font-awesome_6.5.1_all.min.css" type="text/css" />
-  <link rel="stylesheet" href="css/index.css?v=2025-10-19" type="text/css" />
+  <link rel="stylesheet" href="css/gemini.css" type="text/css" />
 
   <!-- TailwindCSS -->
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -72,46 +72,75 @@
   
   <!-- Schema.org Structured Data -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Francisco Barrientos",
-    "jobTitle": "Ingeniero de Software y Datos | Software & Data Engineer",
-    "alumniOf": {
-      "@type": "CollegeOrUniversity",
-      "name": "Universidad de Santiago de Chile (USACH)"
-    },
-    "url": "https://franciscobarrientos.cl",
-    "logo": "https://franciscobarrientos.cl/img/FB_Logo_[2]_500.png",
-    "email": "francisco.barrientos@usach.cl",
-    "telephone": "+56987629765",
-    "description": "Ingeniero de Software y Datos USACH. Desarrollo web, aplicaciones móviles, consultoría en minería y energía en Chile, marketing digital.",
-    "sameAs": [
-        "https://www.linkedin.com/in/francisco-barrientos-c/",
-        "https://github.com/Iyov/",
-        "https://x.com/FcoBarrientosCa/",
-        "https://wa.me/56987629765",
-        "https://digdev.cl"
-    ],
-    "worksFor": {
-        "@type": "Organization",
-        "name": "DigDev"
-    },
-    "knowsAbout": [
-      "Software Development",
-      "Data Engineering",
-      "Web Development",
-      "Mobile Applications",
-      "Mining Software",
-      "Energy Software",
-      "Digital Marketing",
-      "Desarrollo de Software",
-      "Análisis de Datos",
-      "Business Intelligence",
-      "Marketing Digital"
-    ]
-  }
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Francisco Barrientos - Ingeniero de Software y Datos",
+      "url": "https://franciscobarrientos.cl/",
+      "author": {
+        "@type": "Person",
+        "name": "Francisco Barrientos",
+        "jobTitle": "Ingeniero de Software y Datos",
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Universidad de Santiago de Chile (USACH)"
+        },
+        "url": "https://franciscobarrientos.cl/",
+        "image": "https://franciscobarrientos.cl/img/FB_Logo_[2]_500.png",
+        "sameAs": [
+          "https://www.linkedin.com/in/francisco-barrientos-c/",
+          "https://github.com/Iyov/",
+          "https://x.com/FcoBarrientosCa/",
+          "https://gravatar.com/franciscobarrientosc",
+          "https://wa.me/56987629765"
+        ]
+      },
+      "description": "Portafolio de Francisco Barrientos, Ingeniero de Software y Datos. Ofrezco servicios de desarrollo de software, creación web, consultoría en minería y energía en Chile, y marketing digital.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://franciscobarrientos.cl/?s={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      },
+      "service": [
+        {
+          "@type": "Service",
+          "serviceType": "Desarrollo Web",
+          "description": "Creación de sitios web modernos, responsivos y optimizados para SEO.",
+          "provider": {"@type": "Person", "name": "Francisco Barrientos"}
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Aplicaciones Móviles",
+          "description": "Desarrollo de aplicaciones móviles nativas e híbridas para iOS y Android.",
+          "provider": {"@type": "Person", "name": "Francisco Barrientos"}
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Software para la Minería",
+          "description": "Soluciones de software a medida para la industria minera en Chile, incluyendo sistemas de gestión, monitoreo y análisis de datos.",
+          "provider": {"@type": "Person", "name": "Francisco Barrientos"},
+          "areaServed": {"@type": "Country", "name": "Chile"}
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Software para la Energía",
+          "description": "Soluciones de software para el sector energético en Chile, incluyendo sistemas de gestión, consultoría e integración de datos de CEN, CNE y otros.",
+          "provider": {"@type": "Person", "name": "Francisco Barrientos"},
+          "areaServed": {"@type": "Country", "name": "Chile"}
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Marketing Digital",
+          "description": "Estrategias de marketing digital, SEO, SEM y gestión de redes sociales.",
+          "provider": {"@type": "Person", "name": "Francisco Barrientos"}
+        }
+      ]
+    }
   </script>
+
 </head>
 
 <body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
@@ -974,7 +1003,7 @@
     </article>
   </dialog>
 
-  <script src="js/index.js?v=2025-10-19"></script>
+  <script src="js/gemini.js"></script>
 
 </body>
 </html>
