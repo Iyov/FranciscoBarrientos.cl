@@ -141,7 +141,7 @@ A connoisseur of internet humor and culture.
 ## Contact
 Get in touch with me through any of the following channels.
 
-* Phone: +569 8762 9765
+* Phone: tel:+569 8762 9765
 * Email: [francisco.barrientos@usach.cl](mailto:francisco.barrientos@usach.cl)
 * WhatsApp: https://wa.me/56987629765
 * LinkedIn: https://www.linkedin.com/in/francisco-barrientos-c/
