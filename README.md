@@ -141,7 +141,7 @@ A connoisseur of internet humor and culture.
 ## Contact
 Get in touch with me through any of the following channels.
 
-* Phone: tel:+569 8762 9765
+* Phone: [+569 8762 9765](tel:+56987629765)
 * Email: [francisco.barrientos@usach.cl](mailto:francisco.barrientos@usach.cl)
 * WhatsApp: https://wa.me/56987629765
 * LinkedIn: https://www.linkedin.com/in/francisco-barrientos-c/
@@ -152,4 +152,4 @@ Get in touch with me through any of the following channels.
 ## Francisco Barrientos
 Software and Data Engineer from USACH. Creating solutions for Mining and Energy.
 
-© 2025 Francisco Barrientos. All rights reserved.
+© 2026 Francisco Barrientos. All rights reserved.
