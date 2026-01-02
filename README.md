@@ -4,7 +4,7 @@ Website: https://franciscobarrientos.cl/
 ## Francisco Barrientos
 Software and Data Engineer graduated from the "University of Santiago Chile (USACH)". I offer innovative solutions in software development, web creation, consulting in mining and energy in Chile, and digital marketing.
 
-![Francisco Barrientos Logo](img/FB_Logo_[2]_250.png)
+![Francisco Barrientos Logo](img/Francisco_Barrientos_Logo_[2]_250.png)
 
 ## Services
 
