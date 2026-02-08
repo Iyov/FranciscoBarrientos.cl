@@ -27,31 +27,20 @@
 
 **Estado:** ✅ Corregido
 
+### 3. Año Hardcodeado en Footer
+**Problema:** El año estaba hardcodeado como `<span id="current-year">2026</span>` en el HTML
+
+**Solución:** Eliminado el año hardcodeado, dejando `<span id="current-year"></span>` vacío para que JavaScript lo actualice dinámicamente
+
+**Impacto:** Cosmético, evita tener que actualizar manualmente cada año
+
+**Estado:** ✅ Corregido
+
 ---
 
 ## ⚠️ MEJORAS OPCIONALES SUGERIDAS
 
-### 1. Año Hardcodeado en Footer
-**Ubicación:** `index.html` línea 1017
-
-```html
-<span id="current-year">2026</span>
-```
-
-**Descripción:** El año está hardcodeado en HTML, aunque JavaScript lo actualiza dinámicamente.
-
-**Solución Sugerida:**
-```html
-<span id="current-year"></span>
-```
-
-**Impacto:** Muy bajo (cosmético)
-
-**Recomendación:** Opcional, funciona correctamente con JavaScript
-
----
-
-### 2. Imágenes sin Formato WebP
+### 1. Imágenes sin Formato WebP
 **Ubicación:** Carpeta `img/`
 
 **Descripción:** Las imágenes están en PNG. WebP reduciría el tamaño en ~30-40%.
@@ -68,7 +57,7 @@ sharp -i img/Francisco_Barrientos_Logo_[2]_500.png -o img/francisco-barrientos-l
 
 ---
 
-### 3. Font Awesome Completo
+### 2. Font Awesome Completo
 **Ubicación:** `css/font-awesome_6.5.1_all.min.css` (150KB)
 
 **Descripción:** Ya identificado en el plan. Usar solo ~20 iconos ahorraría ~130KB.
@@ -121,8 +110,8 @@ sharp -i img/Francisco_Barrientos_Logo_[2]_500.png -o img/francisco-barrientos-l
 ## 📊 RESUMEN
 
 **Problemas Críticos:** 0  
-**Problemas Corregidos:** 2 (script de build, console.log)  
-**Mejoras Opcionales:** 3  
+**Problemas Corregidos:** 3 (script de build, console.log, año hardcodeado)  
+**Mejoras Opcionales:** 2  
 **Estado General:** ✅ Excelente
 
 ---
@@ -137,7 +126,6 @@ sharp -i img/Francisco_Barrientos_Logo_[2]_500.png -o img/francisco-barrientos-l
 
 ### Prioridad Baja
 - [ ] Convertir imágenes a WebP (-50-100KB)
-- [ ] Limpiar año hardcodeado en HTML (cosmético)
 
 ---
 
