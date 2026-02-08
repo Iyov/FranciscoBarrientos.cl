@@ -33,6 +33,54 @@ Portfolio profesional de Francisco Barrientos, Ingeniero de Software y Datos de 
 
 ---
 
+## 📁 Estructura del Proyecto
+
+```
+franciscobarrientos.cl/
+├── index.html                      # Página principal del sitio
+├── old.html                        # Versión anterior del sitio (histórico)
+│
+├── css/
+│   ├── tailwind.css                # Tailwind compilado (27.53 KB)
+│   ├── index.css                   # Estilos personalizados
+│   ├── old.css                     # Estilos de versión anterior
+│   └── font-awesome_6.5.1_all.min.css  # Iconos Font Awesome
+│
+├── js/
+│   ├── index.js                    # JavaScript principal
+│   ├── index.min.js                # JavaScript minificado (5.92 KB)
+│   └── old.js                      # JavaScript de versión anterior
+│
+├── img/                            # Imágenes y logos del sitio
+├── webfonts/                       # Fuentes de Font Awesome
+├── src/
+│   └── input.css                   # CSS fuente para Tailwind
+│
+├── sw.js                           # Service Worker para PWA (v1.0.2)
+├── robots.txt                      # Configuración para crawlers
+├── sitemap.xml                     # Mapa del sitio para SEO
+├── CNAME                           # Dominio personalizado
+│
+├── .htaccess                       # Headers y configuración Apache
+├── _headers                        # Headers para Netlify
+│
+├── tailwind.config.js              # Configuración de Tailwind CSS
+├── build-css.js                    # Script de compilación CSS
+├── package.json                    # Dependencias y scripts npm
+│
+├── .gitignore                      # Archivos ignorados por Git
+├── .gitattributes                  # Configuración de Git
+├── .editorconfig                   # Configuración del editor
+├── .npmignore                      # Archivos ignorados por npm
+├── .env.example                    # Variables de entorno ejemplo
+│
+├── README.md                       # Este archivo
+├── CONTRIBUTING.md                 # Guía de contribución
+└── LICENSE                         # Licencia MIT
+```
+
+---
+
 ## 🛠️ Tecnologías
 
 - HTML5 semántico
