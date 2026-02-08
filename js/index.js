@@ -6,9 +6,9 @@
 
 // --- Envolver todo en DOMContentLoaded para asegurar que el DOM esté cargado ---
 document.addEventListener('DOMContentLoaded', () => {
-
-  const docElement = document.documentElement;
-  const body = document.body;
+  try {
+    const docElement = document.documentElement;
+    const body = document.body;
 
   // --- Función para decodificar contactos (protección anti-spam) ---
   function decodeContact() {
@@ -326,4 +326,41 @@ document.addEventListener('DOMContentLoaded', () => {
     toggleScrollToTopButton();
   });
 
+  } catch (error) {
+    console.error('❌ Error al inicializar el sitio:', error);
+    // El sitio seguirá funcionando parcialmente incluso con errores
+  }
+});
+
+// --- Registrar Service Worker ---
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js')
+      .then(registration => {
+        console.log('✅ Service Worker registrado:', registration.scope);
+      })
+      .catch(error => {
+        console.error('❌ Error al registrar Service Worker:', error);
+      });
+  });
+}
+
+// --- Handler Global de Errores ---
+window.addEventListener('error', (event) => {
+  console.error('❌ Error global capturado:', {
+    message: event.message,
+    filename: event.filename,
+    lineno: event.lineno,
+    colno: event.colno,
+    error: event.error
+  });
+  // Prevenir que el error rompa completamente el sitio
+  return false;
+});
+
+// --- Handler de Promesas Rechazadas ---
+window.addEventListener('unhandledrejection', (event) => {
+  console.error('❌ Promise rechazada no manejada:', event.reason);
+  // Prevenir que la promesa rechazada rompa el sitio
+  event.preventDefault();
 });

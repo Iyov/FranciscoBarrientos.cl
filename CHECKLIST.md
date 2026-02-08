@@ -11,9 +11,9 @@
 - [x] **2. Cambios Visuales** (4/4) ✅ COMPLETADO
 - [x] **3. Rendimiento** (4/5) ✅ CASI COMPLETADO
 - [x] **4. Seguridad** (2/2) ✅ COMPLETADO
-- [ ] **5. Otros** (0/3)
+- [x] **5. Otros** (3/3) ✅ COMPLETADO
 
-**Total:** 15/19 tareas completadas
+**Total:** 18/19 tareas completadas
 
 ---
 
@@ -291,38 +291,44 @@
 
 ### 🟡 Medio
 
-#### [ ] 5.1 Añadir Manejo de Errores en JS
-- [ ] Envolver código en try-catch
-- [ ] Añadir handler global de errores
-- [ ] Añadir console.error para debugging
-- [ ] Probar que errores no rompen el sitio
+#### [x] 5.1 Añadir Manejo de Errores en JS ✅
+- [x] Envolver código en try-catch
+- [x] Añadir handler global de errores
+- [x] Añadir handler de promesas rechazadas
+- [x] Añadir console.error para debugging
+- [x] Probar que errores no rompen el sitio
 
 **Tiempo estimado:** 30 minutos  
-**Impacto:** Mejor debugging
+**Impacto:** Mejor debugging  
+**Estado:** ✅ COMPLETADO
 
 ---
 
-#### [ ] 5.2 Añadir Robots Meta Tag
-- [ ] Añadir meta tag en `<head>`
-- [ ] Configurar index, follow
-- [ ] Configurar max-image-preview:large
-- [ ] Verificar en código fuente
+#### [x] 5.2 Añadir Robots Meta Tag ✅
+- [x] Añadir meta tag en `<head>`
+- [x] Configurar index, follow
+- [x] Configurar max-image-preview:large
+- [x] Verificar en código fuente
 
 **Tiempo estimado:** 5 minutos  
-**Impacto:** Control sobre indexación
+**Impacto:** Control sobre indexación  
+**Estado:** ✅ COMPLETADO (ya estaba implementado)
 
 ---
 
-#### [ ] 5.3 Service Worker (Opcional)
-- [ ] Crear archivo `sw.js`
-- [ ] Implementar cache de assets
-- [ ] Implementar estrategia de fetch
-- [ ] Registrar service worker en JS
-- [ ] Probar funcionamiento offline
-- [ ] Verificar en DevTools > Application
+#### [x] 5.3 Service Worker ✅
+- [x] Crear archivo `sw.js`
+- [x] Implementar cache de assets (HTML, CSS, JS, imágenes, fuentes)
+- [x] Implementar estrategia cache-first con fallback a network
+- [x] Implementar limpieza de caches antiguos
+- [x] Registrar service worker en `js/index.js`
+- [x] Recompilar JavaScript minificado
+- [ ] **PENDIENTE:** Probar funcionamiento offline en DevTools > Application
+- [ ] **PENDIENTE:** Verificar que cache se actualiza correctamente
 
 **Tiempo estimado:** 2-3 horas  
-**Impacto:** Funciona offline, carga instantánea
+**Impacto:** Funciona offline, carga instantánea  
+**Estado:** ✅ COMPLETADO (pendiente pruebas en navegador)
 
 ---
 
