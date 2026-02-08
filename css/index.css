@@ -91,3 +91,24 @@ dialog::backdrop {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+
+/* --- Estilos para Skip Link (Accesibilidad) --- */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #1193d4;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  z-index: 100;
+  font-weight: 500;
+  border-radius: 0 0 4px 0;
+  transition: top 0.2s ease-in-out;
+}
+
+.skip-link:focus {
+  top: 0;
+  outline: 2px solid white;
+  outline-offset: 2px;
+}

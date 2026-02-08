@@ -4,6 +4,21 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Anti-FOUC Script: Debe estar ANTES de cualquier CSS -->
+  <script>
+    (function() {
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const savedTheme = localStorage.getItem('theme');
+      const theme = savedTheme || (prefersDark ? 'dark' : 'light');
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    })();
+  </script>
+  
   <title data-lang-es="Francisco Barrientos - Ingeniero de Software y Datos" data-lang-en="Francisco Barrientos - Software & Data Engineer">Francisco Barrientos - Ingeniero de Software y Datos</title>
   <meta name="author" content="Francisco Barrientos" />
   <meta name="description" content="Portafolio de Francisco Barrientos, Ingeniero de Software y Datos de la USACH. Ofrezco servicios de desarrollo de software, creación web, consultoría en minería y energía en Chile, y marketing digital." />
@@ -192,6 +207,13 @@
 </head>
 
 <body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+  <!-- Skip Link para Accesibilidad -->
+  <a href="#main-content" class="skip-link">
+    <span data-lang-es="Saltar al contenido principal" data-lang-en="Skip to main content">
+      Saltar al contenido principal
+    </span>
+  </a>
+  
   <div class="relative min-h-screen">
     
     <div class="fixed top-0 left-0 w-full h-1 z-50 bg-primary/20 dark:bg-primary/30" id="progress-bar-container">
@@ -209,27 +231,27 @@
           </div>
           
           <nav class="hidden lg:flex items-center space-x-6 text-sm font-medium">
-            <a href="#about" class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" data-lang-es="Quién Soy" data-lang-en="About Me">Quién Soy</a>
-            <a href="#services" class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" data-lang-es="Servicios" data-lang-en="Services">Servicios</a>
-            <a href="#mining" class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" data-lang-es="Minería" data-lang-en="Mining">Minería</a>
-            <a href="#energy" class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" data-lang-es="Energía" data-lang-en="Energy">Energía</a>
-            <a href="#portfolio" class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" data-lang-es="Portafolio" data-lang-en="Portfolio">Portafolio</a>
-            <a href="#testimonials" class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" data-lang-es="Testimonios" data-lang-en="Testimonials">Testimonios</a>
-            <a href="#blog" class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" data-lang-es="Blog" data-lang-en="Blog">Blog</a>
-            <a href="#faq" class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" data-lang-es="FAQ" data-lang-en="FAQ">FAQ</a>
-            <a href="#hobbies" class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" data-lang-es="Hobbies" data-lang-en="Hobbies">Hobbies</a>
-            <a href="#contact" class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" data-lang-es="Contacto" data-lang-en="Contact">Contacto</a>
+            <a href="#about" class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" data-lang-es="Quién Soy" data-lang-en="About Me">Quién Soy</a>
+            <a href="#services" class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" data-lang-es="Servicios" data-lang-en="Services">Servicios</a>
+            <a href="#mining" class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" data-lang-es="Minería" data-lang-en="Mining">Minería</a>
+            <a href="#energy" class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" data-lang-es="Energía" data-lang-en="Energy">Energía</a>
+            <a href="#portfolio" class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" data-lang-es="Portafolio" data-lang-en="Portfolio">Portafolio</a>
+            <a href="#testimonials" class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" data-lang-es="Testimonios" data-lang-en="Testimonials">Testimonios</a>
+            <a href="#blog" class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" data-lang-es="Blog" data-lang-en="Blog">Blog</a>
+            <a href="#faq" class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" data-lang-es="FAQ" data-lang-en="FAQ">FAQ</a>
+            <a href="#hobbies" class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" data-lang-es="Hobbies" data-lang-en="Hobbies">Hobbies</a>
+            <a href="#contact" class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" data-lang-es="Contacto" data-lang-en="Contact">Contacto</a>
           </nav>
           
           <div class="flex items-center gap-4">
-            <button id="lang-toggle" class="p-2 rounded-full text-gray-600 dark:text-gray-300 hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors" aria-label="Cambiar idioma">
+            <button id="lang-toggle" class="p-2 rounded-full text-gray-700 dark:text-gray-300 hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors" aria-label="Cambiar idioma">
               <i class="fas fa-globe"></i>
             </button>
-            <button id="theme-toggle" class="p-2 rounded-full text-gray-600 dark:text-gray-300 hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors" aria-label="Cambiar tema">
+            <button id="theme-toggle" class="p-2 rounded-full text-gray-700 dark:text-gray-300 hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors" aria-label="Cambiar tema">
               <i class="fas fa-sun dark:hidden"></i>
               <i class="fas fa-moon hidden dark:inline"></i>
             </button>
-            <button class="lg:hidden p-2 rounded-md text-gray-600 dark:text-gray-300" id="mobile-menu-button" aria-label="Abrir menú">
+            <button class="lg:hidden p-2 rounded-md text-gray-700 dark:text-gray-300" id="mobile-menu-button" aria-label="Abrir menú">
               <i class="fas fa-bars"></i>
             </button>
           </div>
@@ -238,21 +260,21 @@
       
       <div class="hidden lg:hidden" id="mobile-menu">
         <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 dark:text-gray-300 hover:bg-primary/20 dark:hover:bg-primary/30" data-lang-es="Quién Soy" data-lang-en="About Me">Quién Soy</a>
-          <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 dark:text-gray-300 hover:bg-primary/20 dark:hover:bg-primary/30" data-lang-es="Servicios" data-lang-en="Services">Servicios</a>
-          <a href="#mining" class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 dark:text-gray-300 hover:bg-primary/20 dark:hover:bg-primary/30" data-lang-es="Minería" data-lang-en="Mining">Minería</a>
-          <a href="#energy" class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 dark:text-gray-300 hover:bg-primary/20 dark:hover:bg-primary/30" data-lang-es="Energía" data-lang-en="Energy">Energía</a>
-          <a href="#portfolio" class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 dark:text-gray-300 hover:bg-primary/20 dark:hover:bg-primary/30" data-lang-es="Portafolio" data-lang-en="Portfolio">Portafolio</a>
-          <a href="#testimonials" class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 dark:text-gray-300 hover:bg-primary/20 dark:hover:bg-primary/30" data-lang-es="Testimonios" data-lang-en="Testimonials">Testimonios</a>
-          <a href="#blog" class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 dark:text-gray-300 hover:bg-primary/20 dark:hover:bg-primary/30" data-lang-es="Blog" data-lang-en="Blog">Blog</a>
-          <a href="#faq" class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 dark:text-gray-300 hover:bg-primary/20 dark:hover:bg-primary/30" data-lang-es="FAQ" data-lang-en="FAQ">FAQ</a>
-          <a href="#hobbies" class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 dark:text-gray-300 hover:bg-primary/20 dark:hover:bg-primary/30" data-lang-es="Hobbies" data-lang-en="Hobbies">Hobbies</a>
-          <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 dark:text-gray-300 hover:bg-primary/20 dark:hover:bg-primary/30" data-lang-es="Contacto" data-lang-en="Contact">Contacto</a>
+          <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-primary/20 dark:hover:bg-primary/30" data-lang-es="Quién Soy" data-lang-en="About Me">Quién Soy</a>
+          <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-primary/20 dark:hover:bg-primary/30" data-lang-es="Servicios" data-lang-en="Services">Servicios</a>
+          <a href="#mining" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-primary/20 dark:hover:bg-primary/30" data-lang-es="Minería" data-lang-en="Mining">Minería</a>
+          <a href="#energy" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-primary/20 dark:hover:bg-primary/30" data-lang-es="Energía" data-lang-en="Energy">Energía</a>
+          <a href="#portfolio" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-primary/20 dark:hover:bg-primary/30" data-lang-es="Portafolio" data-lang-en="Portfolio">Portafolio</a>
+          <a href="#testimonials" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-primary/20 dark:hover:bg-primary/30" data-lang-es="Testimonios" data-lang-en="Testimonials">Testimonios</a>
+          <a href="#blog" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-primary/20 dark:hover:bg-primary/30" data-lang-es="Blog" data-lang-en="Blog">Blog</a>
+          <a href="#faq" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-primary/20 dark:hover:bg-primary/30" data-lang-es="FAQ" data-lang-en="FAQ">FAQ</a>
+          <a href="#hobbies" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-primary/20 dark:hover:bg-primary/30" data-lang-es="Hobbies" data-lang-en="Hobbies">Hobbies</a>
+          <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-primary/20 dark:hover:bg-primary/30" data-lang-es="Contacto" data-lang-en="Contact">Contacto</a>
         </div>
       </div>
     </header>
 
-    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <main id="main-content" class="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
       
       <section id="about" class="min-h-[calc(100vh-4rem)] flex items-center">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -272,7 +294,7 @@
             <h1 class="text-4xl sm:text-5xl md:text-6xl font-black text-gray-900 dark:text-white leading-tight tracking-tighter">
               Francisco Barrientos
             </h1>
-            <p class="mt-4 text-lg sm:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto lg:mx-0">
+            <p class="mt-4 text-lg sm:text-xl text-gray-700 dark:text-gray-300 max-w-2xl mx-auto lg:mx-0">
               <span data-lang-es="Ingeniero de Software y Datos egresado de la Universidad de Santiago de Chile (USACH). Ofrezco soluciones innovadoras en desarrollo de software, creación web, consultoría en minería y energía en Chile, y marketing digital." data-lang-en="Software and Data Engineer graduated from the Universidad de Santiago de Chile (USACH). I offer innovative solutions in software development, web creation, consulting in mining and energy in Chile, and digital marketing.">
                 Ingeniero de Software y Datos egresado de la Universidad de Santiago de Chile (USACH). Ofrezco soluciones innovadoras en desarrollo de software, creación web, consultoría en minería y energía en Chile, y marketing digital.
               </span>
@@ -364,7 +386,7 @@
             <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4" data-lang-es="Software a la Medida para la Minería Chilena" data-lang-en="Custom Software for the Chilean Mining Industry">
               Software a la Medida para la Minería Chilena
             </h2>
-            <p class="text-lg text-gray-600 dark:text-gray-400" data-lang-es="Soluciones tecnológicas diseñadas para optimizar la eficiencia, seguridad y rentabilidad de sus operaciones mineras en Chile." data-lang-en="Technological solutions designed to optimize the efficiency, safety, and profitability of your mining operations in Chile.">
+            <p class="text-lg text-gray-700 dark:text-gray-300" data-lang-es="Soluciones tecnológicas diseñadas para optimizar la eficiencia, seguridad y rentabilidad de sus operaciones mineras en Chile." data-lang-en="Technological solutions designed to optimize the efficiency, safety, and profitability of your mining operations in Chile.">
               Soluciones tecnológicas diseñadas para optimizar la eficiencia, 
               seguridad y rentabilidad de sus operaciones mineras en Chile.
             </p>
@@ -377,7 +399,7 @@
               <h3 class="text-xl font-bold text-gray-900 dark:text-white" data-lang-es="Sistemas de Gestión Minera" data-lang-en="Mining Management Systems">
                 Sistemas de Gestión Minera
               </h3>
-              <p class="text-gray-600 dark:text-gray-400" data-lang-es="Optimiza tus operaciones mineras con sistemas de gestión adaptados al contexto chileno. Mejora la eficiencia y reduce costos." data-lang-en="Optimize your mining operations with management systems adapted to the Chilean context. Improve efficiency and reduce costs.">
+              <p class="text-gray-700 dark:text-gray-300" data-lang-es="Optimiza tus operaciones mineras con sistemas de gestión adaptados al contexto chileno. Mejora la eficiencia y reduce costos." data-lang-en="Optimize your mining operations with management systems adapted to the Chilean context. Improve efficiency and reduce costs.">
                 Optimiza tus operaciones mineras con sistemas de gestión adaptados al contexto chileno. 
                 Mejora la eficiencia y reduce costos.
               </p>
@@ -389,7 +411,7 @@
               <h3 class="text-xl font-bold text-gray-900 dark:text-white" data-lang-es="Monitoreo en Tiempo Real" data-lang-en="Real-Time Monitoring">
                 Monitoreo en Tiempo Real
               </h3>
-              <p class="text-gray-600 dark:text-gray-400" data-lang-es="Supervisa tus procesos en tiempo real para una toma de decisiones ágil y efectiva. Adaptado a las condiciones de la minería en Chile." data-lang-en="Monitor your processes in real-time for agile and effective decision-making. Adapted to mining conditions in Chile.">
+              <p class="text-gray-700 dark:text-gray-300" data-lang-es="Supervisa tus procesos en tiempo real para una toma de decisiones ágil y efectiva. Adaptado a las condiciones de la minería en Chile." data-lang-en="Monitor your processes in real-time for agile and effective decision-making. Adapted to mining conditions in Chile.">
                 Supervisa tus procesos en tiempo real para una toma de decisiones ágil y efectiva. 
                 Adaptado a las condiciones de la minería en Chile.
               </p>
@@ -401,7 +423,7 @@
               <h3 class="text-xl font-bold text-gray-900 dark:text-white" data-lang-es="Integración de Datos" data-lang-en="Data Integration">
                 Integración de Datos
               </h3>
-              <p class="text-gray-600 dark:text-gray-400" data-lang-es="Integra tus datos para una visión completa de tus operaciones. Facilita el análisis y la optimización en el sector minero chileno." data-lang-en="Integrate your data for a complete view of your operations. Facilitates analysis and optimization in the Chilean mining sector.">
+              <p class="text-gray-700 dark:text-gray-300" data-lang-es="Integra tus datos para una visión completa de tus operaciones. Facilita el análisis y la optimización en el sector minero chileno." data-lang-en="Integrate your data for a complete view of your operations. Facilitates analysis and optimization in the Chilean mining sector.">
                 Integra tus datos para una visión completa de tus operaciones. 
                 Facilita el análisis y la optimización en el sector minero chileno.
               </p>
@@ -421,7 +443,7 @@
             <h2 class="text-3xl font-bold text-gray-900 dark:text-white sm:text-4xl" data-lang-es="Software para la Energía" data-lang-en="Software for the Energy Sector">
               Software para la Energía
             </h2>
-            <p class="mt-4 text-lg text-gray-600 dark:text-gray-400" data-lang-es="Soluciones tecnológicas para el sector energético en Chile." data-lang-en="Technological solutions for the energy sector in Chile.">
+            <p class="mt-4 text-lg text-gray-700 dark:text-gray-300" data-lang-es="Soluciones tecnológicas para el sector energético en Chile." data-lang-en="Technological solutions for the energy sector in Chile.">
               Soluciones tecnológicas para el sector energético en Chile.
             </p>
           </div>
@@ -434,7 +456,7 @@
                 <h3 class="text-xl font-bold text-gray-900 dark:text-white" data-lang-es="Sistemas de Gestión en Energía" data-lang-en="Energy Management Systems">
                   Sistemas de Gestión en Energía
                 </h3>
-                <p class="mt-2 text-base text-gray-600 dark:text-gray-400" data-lang-es="Optimización de procesos energéticos para empresas chilenas, reduciendo costos y mejorando la eficiencia." data-lang-en="Optimization of energy processes for Chilean companies, reducing costs and improving efficiency.">
+                <p class="mt-2 text-base text-gray-700 dark:text-gray-300" data-lang-es="Optimización de procesos energéticos para empresas chilenas, reduciendo costos y mejorando la eficiencia." data-lang-en="Optimization of energy processes for Chilean companies, reducing costs and improving efficiency.">
                   Optimización de procesos energéticos para empresas chilenas, reduciendo costos y mejorando la eficiencia.
                 </p>
               </div>
@@ -452,7 +474,7 @@
                 <h3 class="text-xl font-bold text-gray-900 dark:text-white" data-lang-es="Consultoría" data-lang-en="Consulting">
                   Consultoría
                 </h3>
-                <p class="mt-2 text-base text-gray-600 dark:text-gray-400" data-lang-es="Asesoramiento experto en estrategias energéticas adaptadas al mercado chileno, maximizando el rendimiento." data-lang-en="Expert advice on energy strategies adapted to the Chilean market, maximizing performance.">
+                <p class="mt-2 text-base text-gray-700 dark:text-gray-300" data-lang-es="Asesoramiento experto en estrategias energéticas adaptadas al mercado chileno, maximizando el rendimiento." data-lang-en="Expert advice on energy strategies adapted to the Chilean market, maximizing performance.">
                   Asesoramiento experto en estrategias energéticas adaptadas al mercado chileno, maximizando el rendimiento.
                 </p>
               </div>
@@ -470,7 +492,7 @@
                 <h3 class="text-xl font-bold text-gray-900 dark:text-white" data-lang-es="Integración de Datos y Reporting" data-lang-en="Data Integration & Reporting">
                   Integración de Datos y Reporting
                 </h3>
-                <p class="mt-2 text-base text-gray-600 dark:text-gray-400" data-lang-es="Soluciones para la integración de datos de CEN (Coordinador Eléctrico Nacional), CNE, Generadoras, Distribuidoras, etc., facilitando el cumplimiento y la toma de decisiones." data-lang-en="Solutions for data integration from CEN (National Electric Coordinator), CNE, Generators, Distributors, etc., facilitating compliance and decision-making.">
+                <p class="mt-2 text-base text-gray-700 dark:text-gray-300" data-lang-es="Soluciones para la integración de datos de CEN (Coordinador Eléctrico Nacional), CNE, Generadoras, Distribuidoras, etc., facilitando el cumplimiento y la toma de decisiones." data-lang-en="Solutions for data integration from CEN (National Electric Coordinator), CNE, Generators, Distributors, etc., facilitating compliance and decision-making.">
                   Soluciones para la integración de datos de CEN (Coordinador Eléctrico Nacional), CNE, Generadoras, Distribuidoras, etc.,
                   facilitando el cumplimiento y la toma de decisiones.
                 </p>
@@ -491,7 +513,7 @@
             <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl" data-lang-es="Portafolio" data-lang-en="Portfolio">
               Portafolio
             </h2>
-            <p class="mt-4 text-lg text-gray-600 dark:text-gray-400" data-lang-es="Una selección de mis proyectos recientes." data-lang-en="A selection of my recent projects.">
+            <p class="mt-4 text-lg text-gray-700 dark:text-gray-300" data-lang-es="Una selección de mis proyectos recientes." data-lang-en="A selection of my recent projects.">
               Una selección de mis proyectos recientes.
             </p>
           </div>
@@ -504,7 +526,7 @@
                   </div>
                   <div class="flex-1">
                     <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Meir.cl</h3>
-                    <p class="mt-1 text-sm text-gray-600 dark:text-gray-400" data-lang-es="Empresa de Consultores de Energía, desarrollo de software para la industria de Energía en Chile, análisis BI, recopilación y despliegue de datos." data-lang-en="Energy consulting company, software development for the energy industry in Chile, BI analysis, data collection and deployment.">
+                    <p class="mt-1 text-sm text-gray-700 dark:text-gray-300" data-lang-es="Empresa de Consultores de Energía, desarrollo de software para la industria de Energía en Chile, análisis BI, recopilación y despliegue de datos." data-lang-en="Energy consulting company, software development for the energy industry in Chile, BI analysis, data collection and deployment.">
                       Empresa de Consultores de Energía, desarrollo de software para la industria de Energía en Chile, análisis BI, recopilación y despliegue de datos.
                     </p>
                     <div class="mt-4 flex items-center gap-4 text-sm font-medium">
@@ -520,7 +542,7 @@
                         </div>
                         <div>
                           <h5 class="text-sm font-semibold text-gray-900 dark:text-white">CargaExcelCNE</h5>
-                          <p class="mt-1 text-xs text-gray-600 dark:text-gray-400" data-lang-es="Proyecto ETL que carga de manera automática los Excel de CNE a una BD." data-lang-en="ETL project that automatically loads CNE Excel files into a DB.">
+                          <p class="mt-1 text-xs text-gray-700 dark:text-gray-300" data-lang-es="Proyecto ETL que carga de manera automática los Excel de CNE a una BD." data-lang-en="ETL project that automatically loads CNE Excel files into a DB.">
                             Proyecto ETL que carga de manera automática los Excel de CNE a una BD.
                           </p>
                           <a href="https://github.com/Iyov/CargaExcelCNE" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-xs font-medium text-primary hover:underline">
@@ -534,7 +556,7 @@
                         </div>
                         <div>
                           <h5 class="text-sm font-semibold text-gray-900 dark:text-white">ExportaExcel</h5>
-                          <p class="mt-1 text-xs text-gray-600 dark:text-gray-400" data-lang-es="Proyecto de Exportación a Excel para generar el detalle de Reliquidación de una Empresa Generadora de Energía en Chile." data-lang-en="Excel Export project to generate the Reliquidation detail for an Energy Generation Company in Chile.">
+                          <p class="mt-1 text-xs text-gray-700 dark:text-gray-300" data-lang-es="Proyecto de Exportación a Excel para generar el detalle de Reliquidación de una Empresa Generadora de Energía en Chile." data-lang-en="Excel Export project to generate the Reliquidation detail for an Energy Generation Company in Chile.">
                             Proyecto de Exportación a Excel para generar el detalle de Reliquidación de una Empresa Generadora de Energía en Chile.
                           </p>
                           <a href="https://github.com/Iyov/ExportaExcel" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-xs font-medium text-primary hover:underline">
@@ -553,7 +575,7 @@
                   </div>
                   <div>
                     <h3 class="text-lg font-semibold text-gray-900 dark:text-white">DigDev.cl</h3>
-                    <p class="mt-1 text-sm text-gray-600 dark:text-gray-400" data-lang-es="Empresa de desarrollo de software para la industria minera en Chile con más de 10 años de experiencia, análisis BI, recopilación y despliegue de datos." data-lang-en="Software development company for the mining industry in Chile with over 10 years of experience, BI analysis, data collection and deployment.">
+                    <p class="mt-1 text-sm text-gray-700 dark:text-gray-300" data-lang-es="Empresa de desarrollo de software para la industria minera en Chile con más de 10 años de experiencia, análisis BI, recopilación y despliegue de datos." data-lang-en="Software development company for the mining industry in Chile with over 10 years of experience, BI analysis, data collection and deployment.">
                       Empresa de desarrollo de software para la industria minera en Chile con más de 10 años de experiencia, análisis BI, recopilación y despliegue de datos.
                     </p>
                     <div class="mt-4 flex items-center gap-4 text-sm font-medium">
@@ -571,7 +593,7 @@
                   </div>
                   <div>
                     <h3 class="text-lg font-semibold text-gray-900 dark:text-white">RopavejeroRetro.cl</h3>
-                    <p class="mt-1 text-sm text-gray-600 dark:text-gray-400" data-lang-es="Tienda de Video Juegos Retro: Venta de juegos, consolas, accesorios y coleccionables retro, friki y geek." data-lang-en="Retro Video Game Store: Sale of retro, friki, and geek games, consoles, accessories, and collectibles.">
+                    <p class="mt-1 text-sm text-gray-700 dark:text-gray-300" data-lang-es="Tienda de Video Juegos Retro: Venta de juegos, consolas, accesorios y coleccionables retro, friki y geek." data-lang-en="Retro Video Game Store: Sale of retro, friki, and geek games, consoles, accessories, and collectibles.">
                       Tienda de Video Juegos Retro: Venta de juegos, consolas, accesorios y coleccionables retro, friki y geek.
                     </p>
                     <div class="mt-4 flex items-center gap-4 text-sm font-medium">
@@ -589,7 +611,7 @@
                   </div>
                   <div>
                     <h3 class="text-lg font-semibold text-gray-900 dark:text-white">IvetteGonzalez.cl</h3>
-                    <p class="mt-1 text-sm text-gray-600 dark:text-gray-400" data-lang-es="Empresa de Servicios de Masoterapia y venta de Jabones Artesanales." data-lang-en="Company providing Massotherapy Services and selling Artisanal Soaps.">
+                    <p class="mt-1 text-sm text-gray-700 dark:text-gray-300" data-lang-es="Empresa de Servicios de Masoterapia y venta de Jabones Artesanales." data-lang-en="Company providing Massotherapy Services and selling Artisanal Soaps.">
                       Empresa de Servicios de Masoterapia y venta de Jabones Artesanales.</p>
                     <div class="mt-4 flex items-center gap-4 text-sm font-medium">
                       <a class="text-primary hover:underline" href="https://ivettegonzalez.cl" target="_blank" rel="noopener noreferrer">
@@ -605,7 +627,7 @@
                   </div>
                   <div>
                     <h3 class="text-lg font-semibold text-gray-900 dark:text-white">FranciscoBarrientos.cl</h3>
-                    <p class="mt-1 text-sm text-gray-600 dark:text-gray-400" data-lang-es="Mi sitio web personal, mostrando mi portafolio, servicios y detalles de contacto." data-lang-en="My personal website, showcasing my portfolio, services, and contact details.">
+                    <p class="mt-1 text-sm text-gray-700 dark:text-gray-300" data-lang-es="Mi sitio web personal, mostrando mi portafolio, servicios y detalles de contacto." data-lang-en="My personal website, showcasing my portfolio, services, and contact details.">
                       Mi sitio web personal, mostrando mi portafolio, servicios y detalles de contacto.
                     </p>
                     <div class="mt-4 flex items-center gap-4 text-sm font-medium">
@@ -644,7 +666,7 @@
                   </div>
                 </div>
                 <blockquote class="mt-6">
-                  <p class="text-base text-gray-600 dark:text-gray-300" data-lang-es="&quot;La experiencia de Francisco en desarrollo de software e ingeniería de datos ha sido invaluable. Sus soluciones innovadoras y su atención al detalle han mejorado significativamente nuestra eficiencia operativa. Recomendamos ampliamente sus servicios.&quot;" data-lang-en="&quot;Francisco's expertise in software development and data engineering has been invaluable. His innovative solutions and attention to detail have significantly improved our operational efficiency. We highly recommend his services.&quot;">
+                  <p class="text-base text-gray-700 dark:text-gray-300" data-lang-es="&quot;La experiencia de Francisco en desarrollo de software e ingeniería de datos ha sido invaluable. Sus soluciones innovadoras y su atención al detalle han mejorado significativamente nuestra eficiencia operativa. Recomendamos ampliamente sus servicios.&quot;" data-lang-en="&quot;Francisco's expertise in software development and data engineering has been invaluable. His innovative solutions and attention to detail have significantly improved our operational efficiency. We highly recommend his services.&quot;">
                     "La experiencia de Francisco en desarrollo de software e ingeniería de datos ha sido invaluable para
                     nuestro proyecto. Sus soluciones innovadoras y su atención al detalle han mejorado significativamente
                     nuestra eficiencia operativa. Recomendamos ampliamente sus servicios."
@@ -664,7 +686,7 @@
                   </div>
                 </div>
                 <blockquote class="mt-6">
-                  <p class="text-base text-gray-600 dark:text-gray-300" data-lang-es="&quot;Trabajar con Francisco ha sido un punto de inflexión. Su profundo conocimiento de los sectores de minería y energía en Chile, combinado con sus habilidades de marketing digital, nos ha ayudado a alcanzar nuevos mercados y lograr un crecimiento sostenible.&quot;" data-lang-en="&quot;Working with Francisco has been a turning point. His deep knowledge of the mining and energy sectors in Chile, combined with his digital marketing skills, has helped us reach new markets and achieve sustainable growth.&quot;">
+                  <p class="text-base text-gray-700 dark:text-gray-300" data-lang-es="&quot;Trabajar con Francisco ha sido un punto de inflexión. Su profundo conocimiento de los sectores de minería y energía en Chile, combinado con sus habilidades de marketing digital, nos ha ayudado a alcanzar nuevos mercados y lograr un crecimiento sostenible.&quot;" data-lang-en="&quot;Working with Francisco has been a turning point. His deep knowledge of the mining and energy sectors in Chile, combined with his digital marketing skills, has helped us reach new markets and achieve sustainable growth.&quot;">
                     "Trabajar con Francisco ha sido un punto de inflexión para nuestra empresa. Su profundo conocimiento de
                     los sectores de minería y energía en Chile, combinado con sus habilidades de marketing digital, nos ha
                     ayudado a alcanzar nuevos mercados y lograr un crecimiento sostenible."
@@ -684,7 +706,7 @@
                   </div>
                 </div>
                 <blockquote class="mt-6">
-                  <p class="text-base text-gray-600 dark:text-gray-300" data-lang-es="&quot;Francisco es un verdadero profesional. Su capacidad para comprender nuestras necesidades y ofrecer soluciones a medida es excepcional. Su compromiso con la calidad es evidente en cada proyecto. Estamos agradecidos.&quot;" data-lang-en="&quot;Francisco is a true professional. His ability to understand our needs and deliver custom solutions is exceptional. His commitment to quality is evident in every project. We are grateful.&quot;">
+                  <p class="text-base text-gray-700 dark:text-gray-300" data-lang-es="&quot;Francisco es un verdadero profesional. Su capacidad para comprender nuestras necesidades y ofrecer soluciones a medida es excepcional. Su compromiso con la calidad es evidente en cada proyecto. Estamos agradecidos.&quot;" data-lang-en="&quot;Francisco is a true professional. His ability to understand our needs and deliver custom solutions is exceptional. His commitment to quality is evident in every project. We are grateful.&quot;">
                     "Francisco es un verdadero profesional. Su capacidad para comprender nuestras necesidades y ofrecer
                     soluciones a medida en creación web y desarrollo de software es excepcional. Su compromiso con la
                     calidad y la satisfacción del cliente es evidente en cada proyecto. Estamos agradecidos."
@@ -931,7 +953,7 @@
       <section id="contact" class="flex min-h-screen flex-col items-center justify-center p-4 sm:p-6 md:p-8">
         <div class="max-w-4xl mx-auto">
           <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-2 text-center" data-lang-es="Contacto" data-lang-en="Contact">Contacto</h2>
-          <p class="text-center text-gray-600 dark:text-gray-400 mb-12" data-lang-es="Ponte en contacto conmigo a través de cualquiera de los siguientes canales." data-lang-en="Get in touch with me through any of the following channels.">
+          <p class="text-center text-gray-700 dark:text-gray-300 mb-12" data-lang-es="Ponte en contacto conmigo a través de cualquiera de los siguientes canales." data-lang-en="Get in touch with me through any of the following channels.">
             Ponte en contacto conmigo a través de cualquiera de los siguientes canales.
           </p>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -940,14 +962,14 @@
                 <i class="fa-solid fa-phone text-3xl"></i>
               </div>
               <h3 class="text-xl font-bold text-gray-900 dark:text-white" data-lang-es="Teléfono" data-lang-en="Phone">Teléfono</h3>
-              <p class="text-gray-600 dark:text-gray-400 mt-1">+569 8762 9765</p>
+              <p class="text-gray-700 dark:text-gray-300 mt-1">+569 8762 9765</p>
             </a>
             <a href="mailto:francisco.barrientos@usach.cl" class="group bg-white/50 dark:bg-slate-900/50 p-6 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-primary dark:hover:border-primary transition-colors duration-300 flex flex-col items-center text-center shadow-sm hover:shadow-lg">
               <div class="mb-4 text-primary">
                 <i class="fa-solid fa-envelope text-3xl"></i>
               </div>
               <h3 class="text-xl font-bold text-gray-900 dark:text-white">Email</h3>
-              <p class="text-gray-600 dark:text-gray-400 mt-1 truncate w-full">francisco.barrientos@usach.cl</p>
+              <p class="text-gray-700 dark:text-gray-300 mt-1 truncate w-full">francisco.barrientos@usach.cl</p>
             </a>
             <a href="https://wa.me/56987629765" rel="noopener noreferrer" target="_blank" class="group bg-white/50 dark:bg-slate-900/50 p-6 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-primary dark:hover:border-primary transition-colors duration-300 flex flex-col items-center text-center shadow-sm hover:shadow-lg">
               <div class="mb-4 text-primary">
@@ -998,7 +1020,7 @@
               <i class="fas fa-code text-primary text-2xl"></i>
               <span class="text-xl font-bold">Francisco Barrientos</span>
             </a>
-            <p class="mt-2 text-sm text-gray-600 dark:text-gray-400 max-w-xs" data-lang-es="Ingeniero de Software y Datos de la USACH. Creando soluciones para Minería y Energía." data-lang-en="Software and Data Engineer from USACH. Creating solutions for Mining and Energy.">
+            <p class="mt-2 text-sm text-gray-700 dark:text-gray-300 max-w-xs" data-lang-es="Ingeniero de Software y Datos de la USACH. Creando soluciones para Minería y Energía." data-lang-en="Software and Data Engineer from USACH. Creating solutions for Mining and Energy.">
               Ingeniero de Software y Datos de la USACH. Creando soluciones para Minería y Energía.
             </p>
           </div>
@@ -1042,10 +1064,10 @@
         <h3 class="text-2xl font-bold text-gray-900 dark:text-white" data-lang-es="El Futuro de la Minería en Chile: Un Enfoque Basado en Datos" data-lang-en="The Future of Mining in Chile: A Data-Driven Approach">
           El Futuro de la Minería en Chile: Un Enfoque Basado en Datos
         </h3>
-        <p class="mt-4 text-gray-600 dark:text-gray-400" data-lang-es="La industria minera, pilar de la economía chilena, se encuentra en una encrucijada. La necesidad de aumentar la eficiencia, garantizar la sostenibilidad y mejorar la seguridad nunca ha sido más apremiante. Aquí es donde la ciencia de datos y el desarrollo de software a medida se convierten en los principales aliados..." data-lang-en="The mining industry, a pillar of the Chilean economy, is at a crossroads. The need to increase efficiency, ensure sustainability, and improve safety has never been more pressing. This is where data science and custom software development become key allies...">
+        <p class="mt-4 text-gray-700 dark:text-gray-300" data-lang-es="La industria minera, pilar de la economía chilena, se encuentra en una encrucijada. La necesidad de aumentar la eficiencia, garantizar la sostenibilidad y mejorar la seguridad nunca ha sido más apremiante. Aquí es donde la ciencia de datos y el desarrollo de software a medida se convierten en los principales aliados..." data-lang-en="The mining industry, a pillar of the Chilean economy, is at a crossroads. The need to increase efficiency, ensure sustainability, and improve safety has never been more pressing. This is where data science and custom software development become key allies...">
           La industria minera, pilar de la economía chilena, se encuentra en una encrucijada. La necesidad de aumentar la eficiencia, garantizar la sostenibilidad y mejorar la seguridad nunca ha sido más apremiante. Aquí es donde la ciencia de datos y el desarrollo de software a medida se convierten en los principales aliados...
         </p>
-        <p class="mt-4 text-gray-600 dark:text-gray-400" data-lang-es="Hablamos de sistemas de monitoreo en tiempo real que previenen fallas en equipos, modelos predictivos que optimizan la extracción de minerales y plataformas de integración de datos que ofrecen una visión 360° de la operación. Estas no son ideas futuristas, son soluciones que estamos implementando hoy." data-lang-en="We are talking about real-time monitoring systems that prevent equipment failures, predictive models that optimize mineral extraction, and data integration platforms that offer a 360° view of the operation. These are not futuristic ideas; they are solutions we are implementing today.">
+        <p class="mt-4 text-gray-700 dark:text-gray-300" data-lang-es="Hablamos de sistemas de monitoreo en tiempo real que previenen fallas en equipos, modelos predictivos que optimizan la extracción de minerales y plataformas de integración de datos que ofrecen una visión 360° de la operación. Estas no son ideas futuristas, son soluciones que estamos implementando hoy." data-lang-en="We are talking about real-time monitoring systems that prevent equipment failures, predictive models that optimize mineral extraction, and data integration platforms that offer a 360° view of the operation. These are not futuristic ideas; they are solutions we are implementing today.">
           Hablamos de sistemas de monitoreo en tiempo real que previenen fallas en equipos, modelos predictivos que optimizan la extracción de minerales y plataformas de integración de datos que ofrecen una visión 360° de la operación. Estas no son ideas futuristas, son soluciones que estamos implementando hoy.
         </p>
       </div>
@@ -1062,7 +1084,7 @@
         <h3 class="text-2xl font-bold text-gray-900 dark:text-white" data-lang-es="Tendencias de Desarrollo Web en 2025" data-lang-en="Web Development Trends in 2025">
           Tendencias de Desarrollo Web en 2025
         </h3>
-        <p class="mt-4 text-gray-600 dark:text-gray-400" data-lang-es="El desarrollo web evoluciona a una velocidad vertiginosa. Lo que era estándar ayer, hoy es obsoleto. En 2025, la inteligencia artificial integrada, las arquitecturas 'serverless' y el foco en la 'performance' (Core Web Vitals) no son opcionales, son la base de un sitio web exitoso..." data-lang-en="Web development evolves at breakneck speed. What was standard yesterday is obsolete today. In 2025, integrated artificial intelligence, serverless architectures, and a focus on performance (Core Web Vitals) are not optional; they are the foundation of a successful website...">
+        <p class="mt-4 text-gray-700 dark:text-gray-300" data-lang-es="El desarrollo web evoluciona a una velocidad vertiginosa. Lo que era estándar ayer, hoy es obsoleto. En 2025, la inteligencia artificial integrada, las arquitecturas 'serverless' y el foco en la 'performance' (Core Web Vitals) no son opcionales, son la base de un sitio web exitoso..." data-lang-en="Web development evolves at breakneck speed. What was standard yesterday is obsolete today. In 2025, integrated artificial intelligence, serverless architectures, and a focus on performance (Core Web Vitals) are not optional; they are the foundation of a successful website...">
           El desarrollo web evoluciona a una velocidad vertiginosa. Lo que era estándar ayer, hoy es obsoleto. En 2025, la inteligencia artificial integrada, las arquitecturas 'serverless' y el foco en la 'performance' (Core Web Vitals) no son opcionales, son la base de un sitio web exitoso...
         </p>
       </div>
@@ -1079,7 +1101,7 @@
         <h3 class="text-2xl font-bold text-gray-900 dark:text-white" data-lang-es="Marketing Digital para el Sector Energético" data-lang-en="Digital Marketing for the Energy Sector">
           Marketing Digital para el Sector Energético
         </h3>
-        <p class="mt-4 text-gray-600 dark:text-gray-400" data-lang-es="El sector energético, a menudo visto como puramente B2B y técnico, tiene una oportunidad inmensa en el marketing digital. No se trata solo de vender, sino de educar, posicionar la marca y generar confianza. Desde un SEO técnico enfocado en regulaciones (CNE, CEN) hasta 'whitepapers' y 'webinars'..." data-lang-en="The energy sector, often seen as purely B2B and technical, has an immense opportunity in digital marketing. It's not just about selling, but about educating, positioning the brand, and building trust. From technical SEO focused on regulations (CNE, CEN) to whitepapers and webinars...">
+        <p class="mt-4 text-gray-700 dark:text-gray-300" data-lang-es="El sector energético, a menudo visto como puramente B2B y técnico, tiene una oportunidad inmensa en el marketing digital. No se trata solo de vender, sino de educar, posicionar la marca y generar confianza. Desde un SEO técnico enfocado en regulaciones (CNE, CEN) hasta 'whitepapers' y 'webinars'..." data-lang-en="The energy sector, often seen as purely B2B and technical, has an immense opportunity in digital marketing. It's not just about selling, but about educating, positioning the brand, and building trust. From technical SEO focused on regulations (CNE, CEN) to whitepapers and webinars...">
           El sector energético, a menudo visto como puramente B2B y técnico, tiene una oportunidad inmensa en el marketing digital. No se trata solo de vender, sino de educar, posicionar la marca y generar confianza. Desde un SEO técnico enfocado en regulaciones (CNE, CEN) hasta 'whitepapers' y 'webinars' que demuestran 'expertise', una estrategia digital robusta es clave para las generadoras, distribuidoras y consultoras del mañana.
         </p>
       </div>
@@ -1090,3 +1112,5 @@
 
 </body>
 </html>
+
+

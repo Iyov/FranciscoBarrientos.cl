@@ -25,9 +25,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function initTheme() {
     const savedTheme = localStorage.getItem('theme');
-    // Default a 'dark' si no hay nada guardado
-    const defaultTheme = savedTheme ? savedTheme : 'dark';
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const defaultTheme = savedTheme || (prefersDark ? 'dark' : 'light');
     setTheme(defaultTheme);
+    
+    // Escuchar cambios en las preferencias del sistema
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+      if (!localStorage.getItem('theme')) {
+        setTheme(e.matches ? 'dark' : 'light');
+      }
+    });
   }
 
   themeToggle.addEventListener('click', () => {
