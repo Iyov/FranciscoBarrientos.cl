@@ -40,21 +40,17 @@ franciscobarrientos.cl/
 ├── index.html                      # Página principal del sitio
 ├── old.html                        # Versión anterior del sitio (histórico)
 │
-├── css/
-│   ├── tailwind.css                # Tailwind compilado (27.53 KB)
-│   ├── index.css                   # Estilos personalizados
-│   ├── old.css                     # Estilos de versión anterior
-│   └── font-awesome_6.5.1_all.min.css  # Iconos Font Awesome
-│
-├── js/
+├── css/                            # Estilos (Tailwind, personalizados, Font Awesome)
+├── js/                             # JavaScript y configuración
 │   ├── index.js                    # JavaScript principal
 │   ├── index.min.js                # JavaScript minificado (5.92 KB)
-│   └── old.js                      # JavaScript de versión anterior
+│   ├── old.js                      # JavaScript de versión anterior
+│   ├── build-css.js                # Script de compilación CSS
+│   └── tailwind.config.js          # Configuración de Tailwind
 │
-├── img/                            # Imágenes y logos del sitio
+├── img/                            # Imágenes y logos
 ├── webfonts/                       # Fuentes de Font Awesome
-├── src/
-│   └── input.css                   # CSS fuente para Tailwind
+├── src/                            # Archivos fuente para compilación
 │
 ├── sw.js                           # Service Worker para PWA (v1.0.2)
 ├── robots.txt                      # Configuración para crawlers
@@ -64,8 +60,6 @@ franciscobarrientos.cl/
 ├── .htaccess                       # Headers y configuración Apache
 ├── _headers                        # Headers para Netlify
 │
-├── tailwind.config.js              # Configuración de Tailwind CSS
-├── build-css.js                    # Script de compilación CSS
 ├── package.json                    # Dependencias y scripts npm
 │
 ├── .gitignore                      # Archivos ignorados por Git

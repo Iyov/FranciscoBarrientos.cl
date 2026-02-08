@@ -4,10 +4,10 @@
   "description": "Sitio web personal de Francisco Barrientos - Ingeniero de Software y Datos USACH. Portafolio profesional con servicios de desarrollo de software, consultoría en minería y energía en Chile.",
   "main": "index.html",
   "scripts": {
-    "build:css": "node build-css.js",
+    "build:css": "node js/build-css.js",
     "build:js": "npx terser js/index.js -o js/index.min.js --compress --mangle",
     "build": "npm run build:css && npm run build:js",
-    "watch:css": "node build-css.js --watch",
+    "watch:css": "node js/build-css.js --watch",
     "dev": "npm run build"
   },
   "repository": {
