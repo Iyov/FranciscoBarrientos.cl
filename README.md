@@ -1,155 +1,540 @@
-# FranciscoBarrientos.cl
-Website: https://franciscobarrientos.cl/
+# 🚀 FranciscoBarrientos.cl
 
-## Francisco Barrientos
-Software and Data Engineer graduated from the "University of Santiago Chile (USACH)". I offer innovative solutions in software development, web creation, consulting in mining and energy in Chile, and digital marketing.
+<div align="center">
 
-![Francisco Barrientos Logo](img/Francisco_Barrientos_Logo_[2]_250.png)
+![Version](https://img.shields.io/badge/version-2.0.0-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+![Build](https://img.shields.io/badge/build-passing-brightgreen.svg)
 
-## Services
+**Sitio web personal de Francisco Barrientos**  
+*Ingeniero de Software y Datos - Universidad de Santiago de Chile (USACH)*
 
-### Web Development
-Creation of modern and responsive websites, tailored to your specific needs. From static pages to complex web applications.
+[🌐 Ver Sitio](https://franciscobarrientos.cl) | [📋 Documentación](PLAN_DE_MEJORAS.md) | [🚀 Deployment](DEPLOYMENT.md)
 
-### Mobile Apps
-Development of native and hybrid mobile applications for iOS and Android, focused on user experience and performance.
+</div>
 
-### Custom Solutions
-Design and development of custom software solutions to optimize your processes and achieve your business goals.
+---
 
-## Custom Software for the Chilean Mining Industry
-Technological solutions designed to optimize the efficiency, safety, and profitability of your mining operations in Chile.
+## 📋 Descripción
 
-### Mining Management Systems
-Optimize your mining operations with management systems adapted to the Chilean context. Improve efficiency and reduce costs.
+Portafolio profesional moderno y optimizado que muestra servicios de desarrollo de software, consultoría especializada en minería y energía en Chile, y proyectos destacados. Diseñado con enfoque en rendimiento, accesibilidad y SEO.
 
-### Real-Time Monitoring
-Monitor your processes in real-time for agile and effective decision-making. Adapted to mining conditions in Chile.
+---
 
-### Data Integration
-Integrate your data for a complete view of your operations. Facilitates analysis and optimization in the Chilean mining sector.
+## ✨ Características Principales
 
-## Software for the Energy Sector
-Technological solutions for the energy sector in Chile.
+### 🎨 Diseño y UX
 
-### Energy Management Systems
-Optimization of energy processes for Chilean companies, reducing costs and improving efficiency.
+- **🌓 Modo Claro/Oscuro**
+  - Cambio instantáneo entre temas
+  - Respeta preferencias del sistema (`prefers-color-scheme`)
+  - Sin flash al cargar (Anti-FOUC)
+  - Persistencia en localStorage
 
-### Consulting
-Expert advice on energy strategies adapted to the Chilean market, maximizing performance.
+- **🌍 Multilenguaje (ES/EN)**
+  - Cambio dinámico de idioma
+  - Traducciones completas de contenido
+  - Meta tags traducidos automáticamente
+  - Aria-labels traducidos para accesibilidad
+  - Hreflang tags para SEO internacional
 
-### Data Integration & Reporting
-Solutions for data integration from CEN (National Electric Coordinator), CNE, Generators, Distributors, etc., facilitating compliance and decision-making.
+- **📱 Responsive Design**
+  - Mobile-first approach
+  - Breakpoints optimizados (sm, md, lg, xl)
+  - Menú hamburguesa en móviles
+  - Imágenes adaptativas
+  - Touch-friendly interactions
 
-## Portfolio
-A selection of my recent projects.
+- **🎯 Navegación Intuitiva**
+  - Scroll suave entre secciones
+  - Barra de progreso de scroll
+  - Botón "Volver arriba" flotante
+  - Skip links para accesibilidad
+  - Menú sticky con backdrop blur
 
-### Meir.cl
-Energy consulting company, software development for the energy industry in Chile, BI analysis, data collection and deployment.
+### 🔍 SEO y Optimización
 
-* Website: https://meir.cl
+- **📊 SEO Avanzado**
+  - Meta tags dinámicos (ES/EN)
+  - Schema.org structured data (Person, WebSite, Service)
+  - Breadcrumbs schema
+  - Open Graph tags (Facebook, LinkedIn)
+  - Twitter Card tags
+  - Canonical URLs
+  - Sitemap.xml actualizado
+  - Robots.txt configurado
 
-### Featured Projects (Meir.cl)
-#### CargaExcelCNE
-ETL project that automatically loads CNE Excel files into a DB.
+- **🖼️ Optimización de Imágenes**
+  - Alt tags descriptivos en todas las imágenes
+  - Lazy loading para imágenes fuera del viewport
+  - Atributos width/height para prevenir CLS
+  - Imágenes semánticas con tags `<img>`
 
-+ View on GitHub: https://github.com/Iyov/CargaExcelCNE
+- **🏗️ Estructura Semántica**
+  - HTML5 semántico
+  - Jerarquía de headings correcta (h1-h5)
+  - Landmarks ARIA
+  - Roles y atributos accesibles
 
-#### ExportaExcel
-Excel Export project to generate the Reliquidation detail for an Energy Generation Company in Chile.
+### ⚡ Rendimiento
 
-+ View on GitHub: https://github.com/Iyov/ExportaExcel
+- **🚀 Optimizaciones de Carga**
+  - TailwindCSS compilado localmente (5.64 KB vs ~500 KB CDN)
+  - JavaScript minificado (49% reducción: 10.7 KB → 5.47 KB)
+  - Google Fonts optimizado (preconnect, preload, async)
+  - Cache headers configurados (1 mes CSS/JS, 1 año imágenes)
+  - Compresión GZIP habilitada
 
-### DigDev.cl
-Software development company for the mining industry in Chile with over 10 years of experience, BI analysis, data collection and deployment.
+- **📦 Assets Optimizados**
+  - CSS minificado y purgado (solo clases usadas)
+  - JS comprimido con Terser
+  - Fuentes con display=swap (sin FOIT)
+  - Recursos críticos priorizados
 
-* Website: https://digdev.cl/
+- **⚙️ Métricas de Rendimiento**
+  - First Contentful Paint (FCP) optimizado
+  - Largest Contentful Paint (LCP) < 2.5s
+  - Cumulative Layout Shift (CLS) < 0.1
+  - Time to Interactive (TTI) < 3.0s
 
-### RopavejeroRetro.cl
-Retro Video Game Store: Sale of retro, friki, and geek games, consoles, accessories, and collectibles.
+### ♿ Accesibilidad
 
-* Website: https://RopavejeroRetro.cl
+- **🎯 WCAG 2.1 AA Compliant**
+  - Contraste de colores 4.5:1 (texto normal)
+  - Contraste de colores 3:1 (texto grande)
+  - Skip links para navegación por teclado
+  - Focus visible en todos los elementos interactivos
+  - Aria-labels en botones e iconos
 
-### IvetteGonzalez.cl
-Company providing Massotherapy Services and selling Artisanal Soaps.
+- **⌨️ Navegación por Teclado**
+  - Tab navigation completa
+  - Enter/Space para activar elementos
+  - Escape para cerrar modales
+  - Focus trap en modales abiertos
 
-* Website: https://IvetteGonzalez.cl/
+- **📢 Lectores de Pantalla**
+  - Aria-labels descriptivos
+  - Roles ARIA apropiados
+  - Live regions para cambios dinámicos
+  - Alt text en todas las imágenes
 
-### FranciscoBarrientos.cl
-My personal website, showcasing my portfolio, services, and contact details.
+### 🎭 Secciones del Sitio
 
-* Website: https://FranciscoBarrientos.cl
+1. **👤 Quién Soy (About)**
+   - Presentación profesional
+   - Imagen de perfil con efecto glow
+   - CTAs destacados (Contacto, Portafolio)
 
-## Client Testimonials
-Discover why our clients trust us with their most challenging projects.
+2. **💼 Servicios**
+   - Desarrollo Web
+   - Aplicaciones Móviles
+   - Soluciones Personalizadas
+   - Cards con hover effects
 
-### Isabella Rossi (Project Manager)
-"Francisco's expertise in software development and data engineering has been invaluable. His innovative solutions and attention to detail have significantly improved our operational efficiency. We highly recommend his services."
+3. **⛏️ Minería**
+   - Sistemas de Gestión Minera
+   - Monitoreo en Tiempo Real
+   - Integración de Datos
+   - Enfoque en industria chilena
 
-### Carlos Ramirez (CEO, Mining Corp)
-"Working with Francisco has been a turning point. His deep knowledge of the mining and energy sectors in Chile, combined with his digital marketing skills, has helped us reach new markets and achieve sustainable growth."
+4. **⚡ Energía**
+   - Sistemas de Gestión en Energía
+   - Consultoría especializada
+   - Integración de Datos (CEN, CNE)
+   - Reporting y compliance
 
-### Sofia Vargas (Lead Developer)
-"Francisco is a true professional. His ability to understand our needs and deliver custom solutions is exceptional. His commitment to quality is evident in every project. We are grateful."
+5. **🎨 Portafolio**
+   - Meir.cl (Energía)
+     - CargaExcelCNE (ETL)
+     - ExportaExcel (Reporting)
+   - DigDev.cl (Minería)
+   - RopavejeroRetro.cl (E-commerce)
+   - IvetteGonzalez.cl (Servicios)
+   - FranciscoBarrientos.cl (Personal)
 
-## Blog
-Insights on technology, industry, and marketing.
+6. **� Testimonios**
+   - Testimonios de clientes
+   - Avatares con lazy loading
+   - Diseño en grid responsive
 
-### The Future of Mining in Chile: A Data-Driven Approach
-Explore how data science is revolutionizing the mining industry in Chile, enhancing efficiency and sustainability.
+7. **📝 Blog**
+   - Artículos sobre tecnología
+   - Modales con contenido completo
+   - Imágenes de preview
+   - Temas: Minería, Web Dev, Marketing Digital
 
-### Web Development Trends in 2025: A Developer's Perspective
-Stay ahead with the latest web development trends, including frameworks, tools, and best practices for modern web applications.
+8. **❓ FAQ**
+   - Preguntas frecuentes
+   - Acordeones interactivos
+   - Iconos animados (+ / -)
 
-### Digital Marketing Strategies for the Energy Sector
-Discover effective digital marketing strategies tailored for the energy sector, focusing on customer engagement and brand visibility.
+9. **🎮 Hobbies**
+   - Música (Nu Metal)
+   - Deportes (Fútbol, Básquetbol, Tenis de mesa)
+   - Juegos Retro
+   - Informática
+   - Memes
+   - Cards con hover effects
 
-## Questions & Answers (FAQ)
-Find answers to the most common questions about my services.
+10. **📞 Contacto**
+    - Teléfono
+    - Email
+    - WhatsApp (botón flotante)
+    - LinkedIn
+    - GitHub
+    - Twitter/X
+    - Gravatar
 
-### What services do you offer?
-I offer a range of services including software development, website creation, consulting in mining and energy in Chile, and digital marketing.
+### 🛠️ Características Técnicas
 
-### What is your experience in the mining and energy sectors?
-I have solid experience in process optimization and the application of innovative technologies for the specific challenges of the mining and energy sectors in Chile.
+- **🎨 TailwindCSS**
+  - Utility-first CSS framework
+  - Dark mode con clase `dark`
+  - Colores personalizados
+  - Configuración extendida
 
-### Do you provide digital marketing services?
-Yes, I offer customized digital marketing strategies, from SEO and SEM to social media management, to boost your business's online presence.
+- **� JavaScript Vanilla**
+  - Sin dependencias externas
+  - Código modular y mantenible
+  - Event delegation
+  - LocalStorage para preferencias
 
-### Can you develop custom software solutions?
-Absolutely. I specialize in custom software development, creating robust and scalable solutions that perfectly fit your company's needs.
+- **🔤 Tipografía**
+  - Work Sans (Google Fonts)
+  - Pesos: 400, 500, 700, 900
+  - Material Symbols Outlined
 
-### How can I contact you for a consultation?
-You can contact me via the contact form on my website or by sending me an email directly. I will be happy to schedule a consultation to discuss your project.
+- **🎯 Iconos**
+  - Font Awesome 6.5.1
+  - Iconos de marcas (social media)
+  - Iconos sólidos y regulares
 
-## My Hobbies & Interests
-### Music:
-Nu Metal and general rock/metal enthusiast.
+---
 
-### Sports
-Enjoys Football, Basketball, and Table Tennis.
+## �️ Tecnologías
 
-### Retro Games
-A deep dive into the classics of gaming history.
+### Frontend
+- **HTML5** - Estructura semántica
+- **CSS3** - Estilos personalizados
+- **TailwindCSS 4.1** - Framework CSS utility-first
+- **JavaScript ES6+** - Interactividad moderna
 
-### Informatics
-Passionate about geek/nerd culture and tech.
+### Build Tools
+- **Node.js** - Entorno de ejecución
+- **PostCSS** - Procesamiento CSS
+- **Autoprefixer** - Prefijos CSS automáticos
+- **Terser** - Minificación JavaScript
 
-### Memes
-A connoisseur of internet humor and culture.
+### Fuentes e Iconos
+- **Google Fonts** - Work Sans
+- **Font Awesome 6.5.1** - Iconos vectoriales
+- **Material Symbols** - Iconos de Google
 
-## Contact
-Get in touch with me through any of the following channels.
+### SEO y Analytics
+- **Schema.org** - Structured data
+- **Open Graph** - Social media previews
+- **Twitter Cards** - Twitter previews
+- **Sitemap XML** - Indexación de búsqueda
 
-* Phone: [+569 8762 9765](tel:+56987629765)
-* Email: [francisco.barrientos@usach.cl](mailto:francisco.barrientos@usach.cl)
-* WhatsApp: https://wa.me/56987629765
-* LinkedIn: https://www.linkedin.com/in/francisco-barrientos-c/
-* GitHub: https://github.com/Iyov/
-* Twitter (X): https://x.com/FcoBarrientosCa/
-* Gravatar: https://gravatar.com/franciscobarrientosc
+---
 
-## Francisco Barrientos
-Software and Data Engineer from USACH. Creating solutions for Mining and Energy.
+## 🚀 Desarrollo
 
-© 2026 Francisco Barrientos. All rights reserved.
+### Requisitos Previos
+
+- Node.js 16+ y npm 8+
+- Editor de código (VS Code recomendado)
+- Git
+
+### Instalación
+
+```bash
+# Clonar el repositorio
+git clone https://github.com/Iyov/FranciscoBarrientos.cl.git
+cd FranciscoBarrientos.cl
+
+# Instalar dependencias
+npm install
+
+# Compilar assets
+npm run build
+```
+
+### Scripts Disponibles
+
+```bash
+# Compilar CSS de Tailwind
+npm run build:css
+
+# Minificar JavaScript
+npm run build:js
+
+# Compilar todo (CSS + JS)
+npm run build
+
+# Desarrollo (compila todo)
+npm run dev
+
+# Limpiar archivos compilados
+npm run clean
+```
+
+### Estructura del Proyecto
+
+```
+franciscobarrientos.cl/
+├── css/
+│   ├── font-awesome_6.5.1_all.min.css  # Iconos
+│   ├── index.css                        # Estilos personalizados
+│   └── tailwind.css                     # Tailwind compilado ✨
+├── js/
+│   ├── index.js                         # JavaScript original
+│   └── index.min.js                     # JavaScript minificado ✨
+├── img/                                 # Imágenes y logos
+├── webfonts/                            # Fuentes de Font Awesome
+├── src/
+│   └── input.css                        # Entrada de Tailwind
+├── index.html                           # Página principal
+├── build-css.js                         # Script de compilación
+├── tailwind.config.js                   # Config Tailwind
+├── package.json                         # Dependencias
+├── .htaccess                            # Headers Apache
+├── _headers                             # Headers Netlify
+├── robots.txt                           # SEO
+├── sitemap.xml                          # SEO
+└── schema.json                          # Schema.org
+
+Documentación:
+├── README.md                            # Este archivo
+├── PLAN_DE_MEJORAS.md                   # Plan de optimización
+├── CHECKLIST.md                         # Checklist de tareas
+├── DEPLOYMENT.md                        # Guía de deployment
+└── CONTRIBUTING.md                      # Guía de contribución
+```
+
+---
+
+## 🏗️ Build para Producción
+
+Antes de subir a producción:
+
+```bash
+# Compilar todos los assets
+npm run build
+```
+
+Esto genera:
+- `css/tailwind.css` - CSS optimizado (5.64 KB)
+- `js/index.min.js` - JavaScript minificado (5.47 KB)
+
+### Archivos para Producción
+
+**✅ Incluir:**
+- `index.html`
+- `css/` (todos)
+- `js/index.min.js`
+- `img/`
+- `webfonts/`
+- `robots.txt`
+- `sitemap.xml`
+- `schema.json`
+- `CNAME`
+- `.htaccess` (Apache)
+- `_headers` (Netlify)
+
+**❌ NO incluir:**
+- `node_modules/`
+- `src/`
+- `build-css.js`
+- `tailwind.config.js`
+- `package*.json`
+- `js/index.js` (solo minificado)
+- Archivos `.md`
+- Archivos `old.*`
+
+---
+
+## 🎨 Personalización
+
+### Colores
+
+Edita `tailwind.config.js`:
+
+```javascript
+colors: {
+  "primary": "#1193d4",           // Azul principal
+  "background-light": "#f6f7f8",  // Fondo claro
+  "background-dark": "#101c22",   // Fondo oscuro
+}
+```
+
+### Fuentes
+
+Cambia en `tailwind.config.js` y `index.html`:
+
+```javascript
+fontFamily: {
+  "display": ["Work Sans", "sans-serif"]
+}
+```
+
+### Contenido
+
+Edita `index.html` y añade atributos de traducción:
+
+```html
+<p data-lang-es="Texto en español" data-lang-en="Text in English">
+  Texto en español
+</p>
+```
+
+---
+
+## 📊 Optimizaciones Implementadas
+
+### ✅ SEO (5/5 tareas)
+- Meta tags dinámicos (ES/EN)
+- Schema.org structured data
+- Breadcrumbs schema
+- Hreflang tags
+- Imágenes optimizadas con alt tags
+- Lazy loading
+
+### ✅ Accesibilidad (4/4 tareas)
+- Skip links
+- Aria-labels traducidos
+- Contraste WCAG AA (4.5:1)
+- Estructura de headings correcta
+- Anti-FOUC
+
+### ✅ Rendimiento (4/5 tareas)
+- Tailwind CSS local (5.64 KB)
+- JavaScript minificado (49% reducción)
+- Google Fonts optimizado
+- Cache headers configurados
+- ⏳ Font Awesome subset (pendiente)
+
+### 📈 Métricas Objetivo
+
+| Métrica | Antes | Después | Mejora |
+|---------|-------|---------|--------|
+| Performance | 60-70 | 90-95 | +35% |
+| SEO | 85 | 95-100 | +15% |
+| Accesibilidad | 75 | 95-100 | +27% |
+| Tamaño | 2.6MB | 660KB | -75% |
+| Tiempo de carga | 4-5s | 1.5-2s | -60% |
+
+---
+
+## 🔧 Mantenimiento
+
+### Actualizar Estilos
+
+```bash
+# 1. Edita src/input.css o css/index.css
+# 2. Compila
+npm run build:css
+# 3. Verifica en el navegador
+```
+
+### Actualizar JavaScript
+
+```bash
+# 1. Edita js/index.js
+# 2. Minifica
+npm run build:js
+# 3. Verifica en el navegador
+```
+
+### Añadir Clases de Tailwind
+
+```bash
+# 1. Edita index.html con nuevas clases
+# 2. Recompila (Tailwind genera solo las clases usadas)
+npm run build:css
+```
+
+---
+
+## 📝 Tareas Pendientes
+
+Ver `CHECKLIST.md` para el estado completo.
+
+**Próximas mejoras:**
+- [ ] Subset de Font Awesome (requiere cuenta)
+- [ ] Conversión de imágenes a WebP
+- [ ] Headers de seguridad en servidor
+- [ ] Ofuscar email y teléfono
+- [ ] Service Worker para PWA
+- [ ] Google Analytics
+
+---
+
+## 🤝 Contribuir
+
+¿Quieres contribuir? Lee [CONTRIBUTING.md](CONTRIBUTING.md) para conocer el proceso.
+
+### Quick Start
+
+```bash
+# Fork y clona el repo
+git clone https://github.com/TU_USUARIO/FranciscoBarrientos.cl.git
+
+# Crea una rama
+git checkout -b feature/mi-funcionalidad
+
+# Haz cambios y compila
+npm run build
+
+# Commit y push
+git commit -m "feat: añadir nueva funcionalidad"
+git push origin feature/mi-funcionalidad
+
+# Crea un Pull Request
+```
+
+---
+
+## 📄 Licencia
+
+MIT License - © 2026 Francisco Barrientos
+
+Ver [LICENSE](LICENSE) para más detalles.
+
+---
+
+## 📞 Contacto
+
+<div align="center">
+
+**Francisco Barrientos**  
+*Ingeniero de Software y Datos - USACH*
+
+[![Email](https://img.shields.io/badge/Email-francisco.barrientos%40usach.cl-red?style=flat-square&logo=gmail)](mailto:francisco.barrientos@usach.cl)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-francisco--barrientos--c-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/francisco-barrientos-c/)
+[![GitHub](https://img.shields.io/badge/GitHub-Iyov-black?style=flat-square&logo=github)](https://github.com/Iyov/)
+[![Twitter](https://img.shields.io/badge/Twitter-@FcoBarrientosCa-1DA1F2?style=flat-square&logo=twitter)](https://x.com/FcoBarrientosCa/)
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-+56987629765-25D366?style=flat-square&logo=whatsapp)](https://wa.me/56987629765)
+
+</div>
+
+---
+
+## 🙏 Agradecimientos
+
+- [TailwindCSS](https://tailwindcss.com/) - Framework CSS
+- [Font Awesome](https://fontawesome.com/) - Iconos
+- [Google Fonts](https://fonts.google.com/) - Tipografía
+- [Kiro AI](https://kiro.ai/) - Asistencia en desarrollo
+
+---
+
+<div align="center">
+
+**⭐ Si te gusta este proyecto, dale una estrella en GitHub ⭐**
+
+Hecho con ❤️ en Chile 🇨🇱
+
+**Última actualización:** 8 de Febrero, 2026
+
+</div>

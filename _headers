@@ -1,0 +1,21 @@
+# Francisco Barrientos - Headers para Netlify
+
+# CSS - 1 mes
+/css/*
+  Cache-Control: public, max-age=2592000, immutable
+
+# JavaScript - 1 mes
+/js/*
+  Cache-Control: public, max-age=2592000, immutable
+
+# Imágenes - 1 año
+/img/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Fuentes - 1 año
+/webfonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# HTML - Sin cache (siempre fresco)
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate

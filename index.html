@@ -53,43 +53,20 @@
   <meta name="twitter:description" content="Portafolio de servicios de desarrollo de software, consultoría en minería, energía y marketing digital en Chile." />
   <meta name="twitter:image" content="https://franciscobarrientos.cl/img/Francisco_Barrientos_Logo_[2]_500.png" />
   
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&display=swap" />
+  <!-- Google Fonts - Optimizado -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&display=swap" /></noscript>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 
   <!-- Custom CSS -->
   <link rel="icon" type="image/x-icon" href="img/favicon.png" />
   <link rel="apple-touch-icon" href="img/favicon.png" />
   <link rel="stylesheet" href="css/font-awesome_6.5.1_all.min.css" type="text/css" />
-  <link rel="stylesheet" href="css/index.css?v=2026-02-08_1" type="text/css" />
-
-  <!-- TailwindCSS -->
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-
-  <script>
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          colors: {
-            "primary": "#1193d4",
-            "background-light": "#f6f7f8",
-            "background-dark": "#101c22",
-          },
-          fontFamily: {
-            "display": ["Work Sans"]
-          },
-          borderRadius: {
-            "DEFAULT": "0.25rem",
-            "lg": "0.5rem",
-            "xl": "0.75rem",
-            "full": "9999px"
-          },
-        },
-      },
-    }
-  </script>
+  <link rel="stylesheet" href="css/tailwind.css?v=2026-02-08_2" type="text/css" />
+  <link rel="stylesheet" href="css/index.css?v=2026-02-08_2" type="text/css" />
   
   <!-- Schema.org Structured Data -->
   <script type="application/ld+json">
@@ -1108,7 +1085,7 @@
     </article>
   </dialog>
 
-  <script src="js/index.js?v=2026-02-08_1"></script>
+  <script src="js/index.min.js?v=2026-02-08_2"></script>
 
 </body>
 </html>

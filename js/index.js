@@ -1,6 +1,6 @@
 /*
   Archivo de Lógica JavaScript
-  Para: gemini.html
+  Para: index.html
   Autor: Francisco Barrientos
 */
 

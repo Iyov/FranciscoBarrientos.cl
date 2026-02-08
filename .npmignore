@@ -1,0 +1,39 @@
+# Archivos de desarrollo que NO deben ir a producción
+node_modules/
+src/
+build-css.js
+tailwind.config.js
+
+# Archivos de configuración de desarrollo
+.vscode/
+.idea/
+.editorconfig
+
+# Archivos de documentación de desarrollo
+PLAN_DE_MEJORAS.md
+CHECKLIST.md
+README.md
+
+# Archivos de versión anterior
+old.html
+old.css
+old.js
+
+# Logs
+*.log
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Archivos temporales
+*.tmp
+*.temp
+*.bak
+*.backup
