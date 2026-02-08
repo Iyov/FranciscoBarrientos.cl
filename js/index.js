@@ -10,6 +10,33 @@ document.addEventListener('DOMContentLoaded', () => {
   const docElement = document.documentElement;
   const body = document.body;
 
+  // --- Función para decodificar contactos (protección anti-spam) ---
+  function decodeContact() {
+    // Email y teléfono codificados en Base64
+    const email = atob('ZnJhbmNpc2NvLmJhcnJpZW50b3NAdXNhY2guY2w=');
+    const phone = atob('KzU2OTg3NjI5NzY1');
+    
+    // Actualizar links de email
+    document.querySelectorAll('a[data-email]').forEach(link => {
+      link.href = `mailto:${email}`;
+      if (link.textContent.includes('@') || link.textContent.toLowerCase().includes('email')) {
+        const textNode = link.querySelector('p');
+        if (textNode) {
+          textNode.textContent = email;
+        }
+      }
+    });
+    
+    // Actualizar links de teléfono
+    document.querySelectorAll('a[data-phone]').forEach(link => {
+      link.href = `tel:${phone}`;
+      const textNode = link.querySelector('p');
+      if (textNode && textNode.textContent.includes('+')) {
+        textNode.textContent = phone;
+      }
+    });
+  }
+
   // --- 1. Lógica de Cambio de Tema (Modo Oscuro/Claro) ---
   const themeToggle = document.getElementById('theme-toggle');
   
@@ -291,6 +318,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- Inicializadores ---
   initTheme();
   initLanguage();
+  decodeContact(); // Decodificar contactos para protección anti-spam
   
   // --- Event Listeners Globales ---
   window.addEventListener('scroll', () => {
