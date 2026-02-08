@@ -40,7 +40,14 @@ franciscobarrientos.cl/
 ├── index.html                      # Página principal del sitio
 ├── old.html                        # Versión anterior del sitio (histórico)
 │
-├── css/                            # Estilos (Tailwind, personalizados, Font Awesome)
+├── css/                            # Estilos del sitio
+│   ├── tailwind.css                # Tailwind compilado (27.53 KB)
+│   ├── index.css                   # Estilos personalizados
+│   ├── old.css                     # Estilos de versión anterior
+│   ├── font-awesome_*.min.css      # Iconos Font Awesome
+│   └── src/
+│       └── input.css               # CSS fuente para Tailwind
+│
 ├── js/                             # JavaScript y configuración
 │   ├── index.js                    # JavaScript principal
 │   ├── index.min.js                # JavaScript minificado (5.92 KB)
@@ -50,7 +57,6 @@ franciscobarrientos.cl/
 │
 ├── img/                            # Imágenes y logos
 ├── webfonts/                       # Fuentes de Font Awesome
-├── src/                            # Archivos fuente para compilación
 │
 ├── sw.js                           # Service Worker para PWA (v1.0.2)
 ├── robots.txt                      # Configuración para crawlers

@@ -4,7 +4,7 @@ const postcss = require('postcss');
 const tailwindcss = require('tailwindcss');
 const autoprefixer = require('autoprefixer');
 
-const inputPath = path.join(__dirname, '..', 'src', 'input.css');
+const inputPath = path.join(__dirname, '..', 'css', 'src', 'input.css');
 const outputPath = path.join(__dirname, '..', 'css', 'tailwind.css');
 const configPath = path.join(__dirname, 'tailwind.config.js');
 
