@@ -18,22 +18,20 @@
 
 **Estado:** ✅ Corregido
 
+### 2. Console.log en Producción
+**Problema:** Múltiples `console.log()` en `js/index.js` y `sw.js` aumentaban el tamaño del bundle
+
+**Solución:** Eliminados todos los `console.log()`, manteniendo solo `console.error()` para debugging de errores críticos
+
+**Impacto:** ~300 bytes reducidos
+
+**Estado:** ✅ Corregido
+
 ---
 
 ## ⚠️ MEJORAS OPCIONALES SUGERIDAS
 
-### 1. Console.log en Producción
-**Ubicación:** `js/index.js`, `sw.js`
-
-**Descripción:** Hay múltiples `console.log()` que son útiles para debugging pero podrían eliminarse en producción para reducir tamaño.
-
-**Impacto:** Bajo (~100 bytes)
-
-**Recomendación:** Mantener por ahora para facilitar debugging. Considerar eliminar en versión 3.0.0
-
----
-
-### 2. Año Hardcodeado en Footer
+### 1. Año Hardcodeado en Footer
 **Ubicación:** `index.html` línea 1017
 
 ```html
@@ -53,7 +51,7 @@
 
 ---
 
-### 3. Imágenes sin Formato WebP
+### 2. Imágenes sin Formato WebP
 **Ubicación:** Carpeta `img/`
 
 **Descripción:** Las imágenes están en PNG. WebP reduciría el tamaño en ~30-40%.
@@ -70,7 +68,7 @@ sharp -i img/Francisco_Barrientos_Logo_[2]_500.png -o img/francisco-barrientos-l
 
 ---
 
-### 4. Font Awesome Completo
+### 3. Font Awesome Completo
 **Ubicación:** `css/font-awesome_6.5.1_all.min.css` (150KB)
 
 **Descripción:** Ya identificado en el plan. Usar solo ~20 iconos ahorraría ~130KB.
@@ -123,8 +121,8 @@ sharp -i img/Francisco_Barrientos_Logo_[2]_500.png -o img/francisco-barrientos-l
 ## 📊 RESUMEN
 
 **Problemas Críticos:** 0  
-**Problemas Corregidos:** 1 (script de build)  
-**Mejoras Opcionales:** 4  
+**Problemas Corregidos:** 2 (script de build, console.log)  
+**Mejoras Opcionales:** 3  
 **Estado General:** ✅ Excelente
 
 ---
@@ -139,7 +137,6 @@ sharp -i img/Francisco_Barrientos_Logo_[2]_500.png -o img/francisco-barrientos-l
 
 ### Prioridad Baja
 - [ ] Convertir imágenes a WebP (-50-100KB)
-- [ ] Eliminar console.log en producción (-100 bytes)
 - [ ] Limpiar año hardcodeado en HTML (cosmético)
 
 ---
