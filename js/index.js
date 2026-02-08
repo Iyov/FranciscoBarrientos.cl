@@ -40,6 +40,79 @@ document.addEventListener('DOMContentLoaded', () => {
   const langToggle = document.getElementById('lang-toggle');
   const translatableElements = document.querySelectorAll('[data-lang-es]');
   
+  // Función para actualizar meta tags dinámicamente
+  function updateMetaTags(lang) {
+    const meta = {
+      es: {
+        title: 'Francisco Barrientos - Ingeniero de Software y Datos',
+        description: 'Portafolio de Francisco Barrientos, Ingeniero de Software y Datos de la USACH. Ofrezco servicios de desarrollo de software, creación web, consultoría en minería y energía en Chile, y marketing digital.',
+        ogTitle: 'Francisco Barrientos - Ingeniero de Software y Datos',
+        ogDescription: 'Ingeniero de Software y Datos USACH. Desarrollo web, aplicaciones móviles, consultoría en minería y energía en Chile.',
+        twitterTitle: 'Francisco Barrientos - Ingeniero de Software y Datos',
+        twitterDescription: 'Portafolio de servicios de desarrollo de software, consultoría en minería, energía y marketing digital en Chile.'
+      },
+      en: {
+        title: 'Francisco Barrientos - Software & Data Engineer',
+        description: 'Portfolio of Francisco Barrientos, Software and Data Engineer from USACH. I offer software development services, web creation, consulting in mining and energy in Chile, and digital marketing.',
+        ogTitle: 'Francisco Barrientos - Software & Data Engineer',
+        ogDescription: 'Software and Data Engineer from USACH. Web development, mobile applications, consulting in mining and energy in Chile.',
+        twitterTitle: 'Francisco Barrientos - Software & Data Engineer',
+        twitterDescription: 'Portfolio of software development services, consulting in mining, energy and digital marketing in Chile.'
+      }
+    };
+
+    const metaData = meta[lang];
+    
+    // Actualizar title
+    document.title = metaData.title;
+    
+    // Actualizar meta description
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) metaDesc.setAttribute('content', metaData.description);
+    
+    // Actualizar Open Graph
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    if (ogTitle) ogTitle.setAttribute('content', metaData.ogTitle);
+    
+    const ogDesc = document.querySelector('meta[property="og:description"]');
+    if (ogDesc) ogDesc.setAttribute('content', metaData.ogDescription);
+    
+    const ogLocale = document.querySelector('meta[property="og:locale"]');
+    if (ogLocale) ogLocale.setAttribute('content', lang === 'es' ? 'es_CL' : 'en_US');
+    
+    // Actualizar Twitter Card
+    const twitterTitle = document.querySelector('meta[name="twitter:title"]');
+    if (twitterTitle) twitterTitle.setAttribute('content', metaData.twitterTitle);
+    
+    const twitterDesc = document.querySelector('meta[name="twitter:description"]');
+    if (twitterDesc) twitterDesc.setAttribute('content', metaData.twitterDescription);
+  }
+
+  // Función para actualizar aria-labels dinámicamente
+  function updateAriaLabels(lang) {
+    const labels = {
+      es: {
+        'theme-toggle': 'Cambiar tema',
+        'lang-toggle': 'Cambiar idioma',
+        'mobile-menu-button': 'Abrir menú',
+        'scroll-to-top': 'Volver arriba'
+      },
+      en: {
+        'theme-toggle': 'Toggle theme',
+        'lang-toggle': 'Change language',
+        'mobile-menu-button': 'Open menu',
+        'scroll-to-top': 'Back to top'
+      }
+    };
+
+    Object.keys(labels[lang]).forEach(id => {
+      const element = document.getElementById(id);
+      if (element) {
+        element.setAttribute('aria-label', labels[lang][id]);
+      }
+    });
+  }
+  
   function setLanguage(lang) {
     docElement.setAttribute('lang', lang);
     localStorage.setItem('language', lang);
@@ -57,6 +130,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }
     });
+    
+    // Actualizar meta tags y aria-labels
+    updateMetaTags(lang);
+    updateAriaLabels(lang);
   }
 
   function initLanguage() {
