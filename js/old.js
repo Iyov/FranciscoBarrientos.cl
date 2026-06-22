@@ -40,7 +40,7 @@ const translations = {
         contactProjectTitle: "¿Tienes un proyecto?",
         contactProjectDesc: "¡Hablemos sobre cómo puedo ayudarte a hacerlo realidad!",
         contactButton: "Enviar mensaje",
-        footerCopyright: "© 2025 Francisco Barrientos. Todos los derechos reservados."
+        footerCopyright: "© 2026 Francisco Barrientos. Todos los derechos reservados."
     },
     en: {
         navServices: "Services",
@@ -82,7 +82,7 @@ const translations = {
         contactProjectTitle: "Do you have a project?",
         contactProjectDesc: "Let's talk about how I can help you make it happen!",
         contactButton: "Send message",
-        footerCopyright: "© 2025 Francisco Barrientos. All rights reserved."
+        footerCopyright: "© 2026 Francisco Barrientos. All rights reserved."
     }
 };
 
